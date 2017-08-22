@@ -38,9 +38,9 @@
  var clue_line_one = [];
  var clue_line_two = [];
  var clue_text1;
- var element_holder_names = ['GOLD_IN','PLATINUM_IN','TIN_IN','copper_IN','COBALT_IN','SILVER_IN','LITHIUM_IN','CARBON_IN'];
+ var element_holder_names = ['GOLD_IN','PLATINUM_IN','TIN_IN','copper_IN','COBALT_IN','SILVER_IN1','LITHIUM_IN','CARBON_IN'];
  var instruction_text;
- var instruction_text_content = 'Rotate the Earth to the correct position and click             to check your answer.';
+ var instruction_text_content = 'భూమిని సరియైన స్థితిలోకి తిప్పండి మరియు మీ జవాబు సరైందో కాదో చూడటానికి           క్లిక్ చేయండి. ';
  var clockwise_arrow;
  var anticlockwise_arrow;
  var screen_text = [];
@@ -80,7 +80,7 @@
   screen_text[1].wordWrapWidth = 380;
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   var style5 = { font: "16px tahoma", fill: "#00C7FF", boundsAlignH: "center", boundsAlignV: "middle" };
-  var screen_text5 = game.add.text(162,465,'Note : The images of the earth in the activity are not to scale and motion \n of Earth is only illustrative, not accurate.',style5);
+  var screen_text5 = game.add.text(162,465,'యానిమేషన్లు మరియు కార్యకలాపంలో ఉన్న చిత్రాలు స్కేలులో లేవు మరియు భూమి యొక్క \nచలనం సోదాహరణ మాత్రమే , ఖచ్చితంగా కాదు.',style5);
   
   screen_text[2] = game.add.text(162,375,'ఈ కార్యకలాపం యొక్క నియమాలు చదవడానికి నియమాలు  బటన్‌ని క్లిక్ చేయండి.  ',style2);
   screen_text[3] = game.add.text(162,405,'మూలకం ఎలా సేకరించడానికి చూడటానికి డెమో  బటన్‌ని క్లిక్ చేయండి',style2);
@@ -304,24 +304,24 @@
   //country[0] = game.add.text(247,17,country_name[0],style5);
   //time_of_day[0] = game.add.text(383,17,time_of_day_text[0],style5);
   //elementname[0] = game.add.text(303,48,elementname_text[0],style5);
-  clue_line_one[0] = game.add.text(180,17,'Move to             capital at          and be led,',style1);
-  clue_line_two[0] = game.add.text(180,48,'To the element,           , which is red.',style1);
+  clue_line_one[0] = game.add.text(180,17,'మధ్యాహ్నం ఇండియా రాజధానికి మరియు',style1);
+  clue_line_two[0] = game.add.text(180,48,'ఎర్రగా ఉన్న మూలకం, కాపర్ కి వెళ్లండి.',style1);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   //var submit = game.add.text(512,78,'Submit',style3);
+   //var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  var submit = game.add.text(512,78,'Submit',style3);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[0] = game.add.button(140,590,'reset',this.reset_function_one,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[0] = game.add.button(252,598,'buttons',this.submit_function,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  var submit = game.add.text(618,78,'సబ్మిట్',style3);
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[0] = game.add.button(140,598,'reset',this.reset_function_one,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[0] = game.add.button(252,598,'buttons',this.submit_function,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[0] = game.add.button(360,598,'buttons',this.next_stage_two,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
   earth_np = game.add.sprite(308,353,'game_astro','TELGU_NORTH_EARTH_new');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
             
-              anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_one,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
-            anticlockwise_arrow.scale.setTo(0.85,0.85);
+              anticlockwise_arrow = game.add.button(305,350,'game_astri',this.input_function_one,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
+            anticlockwise_arrow.scale.setTo(1.05,1.05);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
 
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
@@ -373,7 +373,7 @@ update : function()
  {
   rotation[0] = 1;
  },
- /*render : function()
+/* render : function()
          { 
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
@@ -460,7 +460,7 @@ update : function()
         {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -472,7 +472,7 @@ update : function()
          {
           
            type : "text",
-           content: "You found Copper (Cu), the element in the first clue.",
+           content: "మీరు కాపర్ (Cu) మూలకం, మొదటి ఆధారంలో ఉన్నది కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -180,
           fontFamily: "tahoma",
@@ -553,7 +553,7 @@ update : function()
         {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -565,7 +565,7 @@ update : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -578,8 +578,8 @@ update : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -591,7 +591,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -631,8 +631,8 @@ update : function()
         {
           
            type : "text",
-           content: "Sorry! ",
-          offsetX : -170,
+           content: "క్షమించండి!  ",
+          offsetX : -120,
           offsetY: -220,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -643,8 +643,8 @@ update : function()
         {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nnoon in India and collected the element Copper (Cu).",
-          offsetX : 0,
+           content: "మీరు ఇండియాలో మధ్యాహ్నం అయ్యేట్లు భూమిని \nతిప్పాలి మరియు కాపర్ (Cu) మూలకం సేకరించాలి.",
+          offsetX : -5,
           offsetY: -170,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -656,7 +656,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -130,
+          offsetX : -80,
           offsetY: -120,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -888,26 +888,26 @@ next_stage_two : function()
   //country[1] = game.add.text(228,17,country_name[1],style5);
   //time_of_day[1] = game.add.text(324,17,time_of_day_text[1],style5);
   //elementname[1] = game.add.text(280,48,elementname_text[1],style5);
-  clue_line_one[1] = game.add.text(180,17,'Go to               at           ,',style1);
-  clue_line_two[1] = game.add.text(180,48,'You will find              deposit.',style1);
+  clue_line_one[1] = game.add.text(180,17,'సూర్యాస్తమ సమయంలో ఆస్ట్రేలియా వెళ్లండి; ',style1);
+  clue_line_two[1] = game.add.text(180,48,'మీరు లిథియం నిల్వని కనుగొంటారు.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   //clue_text1 = game.add.text(180,17,clue_text[1],style1);
   //clue_text1.wordWrap = true;
   //clue_text1.wordWrapWidth = 220;
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  submit_buttons[1] = game.add.button(252,598,'buttons',this.submit_function_one,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
-  reset_btn[1] = game.add.button(140,590,'game_astro',this.reset_function_two,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  submit_buttons[1] = game.add.button(252,598,'buttons',this.submit_function_one,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
+  reset_btn[1] = game.add.button(140,598,'reset',this.reset_function_two,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
   next_buttons[1] = game.add.button(360,598,'buttons',this.next_stage_two,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
   earth_np = game.add.sprite(308,353,'game_astro','TELGU_SOUTH_EARTH');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
              
-             clockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_one,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
-            clockwise_arrow.scale.setTo(0.85,0.85);
+             clockwise_arrow = game.add.button(310,354,'game_astri',this.input_function_one,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
+            clockwise_arrow.scale.setTo(0.98,0.98);
             clockwise_arrow.anchor.setTo(0.5,0.5);
             //clockwise_arrow.onInputUp.add(this.input_function,this);
             clockwise_arrow.onInputOver.add(this.input_function,this);
@@ -1053,7 +1053,7 @@ console.log('out');
         {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -240,
           fontFamily: "tahoma",
@@ -1065,7 +1065,7 @@ console.log('out');
          {
           
            type : "text",
-           content: "You found Lithium (Li), the next element.",
+           content: "మీరు తరువాత మూలకం, లిథియం (Li) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -200,
           fontFamily: "tahoma",
@@ -1143,10 +1143,12 @@ console.log('out');
                       reg.modal.hideModal("modal2");
                     }
         },
+         
+
          {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -1158,7 +1160,7 @@ console.log('out');
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -1171,8 +1173,8 @@ console.log('out');
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1184,7 +1186,7 @@ console.log('out');
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1192,6 +1194,7 @@ console.log('out');
           color: "0xeeeeee",
 
         },
+
 
           ]
         
@@ -1224,7 +1227,7 @@ console.log('out');
          {
           
            type : "text",
-           content: "Sorry! ",
+           content: "క్షమించండి!  ",
           offsetX : -170,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -1236,8 +1239,8 @@ console.log('out');
         {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nevening in Australia and collected the element Lithium (Li).",
-          offsetX : 0,
+           content: "మీరు ఆస్ట్రేలియాలో సాయంత్రం అయ్యేట్లు భూమిని \nతిప్పాలి మరియు లిథియం (Li) మూలకం సేకరించాలి.",
+          offsetX : -60,
           offsetY: -170,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1463,23 +1466,23 @@ playGame2.prototype =
   //country[2] = game.add.text(228,17,country_name[2],style5);
   //time_of_day[2] = game.add.text(310,17,time_of_day_text[2],style5);
   //elementname[2] = game.add.text(280,48,elementname_text[2],style5);
-  clue_line_one[2] = game.add.text(180,17,'Go to            at                when the stars are shining;',style1);
-  clue_line_two[2] = game.add.text(180,48,'You will find             is ready for collecting.',style1);
+  clue_line_one[2] = game.add.text(180,17,'అర్ధరాత్రి నక్షత్రాలు మెరుస్తున్నప్పుడు రష్యా కి వెళ్లండి;',style1);
+  clue_line_two[2] = game.add.text(180,48,'సేకరించడానికి సిద్ధంగా ఉన్న కోబాల్ట్  కనుగొంటారు.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[2] = game.add.button(140,590,'game_astro',this.reset_function_three,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[2] = game.add.button(252,598,'buttons',this.submit_function_two,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[2] = game.add.button(140,598,'reset',this.reset_function_three,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[2] = game.add.button(252,598,'buttons',this.submit_function_two,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[2] = game.add.button(360,598,'buttons',this.next_stage_three,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
   earth_np = game.add.sprite(308,353,'game_astro','TELGU_NORTH_EARTH_new');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
             
-              anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_three,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
-            anticlockwise_arrow.scale.setTo(0.85,0.85);
+              anticlockwise_arrow = game.add.button(305,350,'game_astri',this.input_function_three,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
+            anticlockwise_arrow.scale.setTo(1.07,1.07);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
@@ -1614,7 +1617,7 @@ update : function()
           {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -1626,7 +1629,7 @@ update : function()
          {
           
            type : "text",
-           content: "You found the next element, Cobalt (Co).",
+           content: "మీరు తరువాతి మూలకం, కోబాల్ట్ (Co) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -180,
           fontFamily: "tahoma",
@@ -1704,10 +1707,10 @@ update : function()
                       reg.modal.hideModal("modal2");
                     }
         },
-         {
+          {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -1719,7 +1722,7 @@ update : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -1732,8 +1735,8 @@ update : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1745,7 +1748,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1785,8 +1788,8 @@ update : function()
          {
           
            type : "text",
-           content: "Sorry! ",
-          offsetX : -170,
+           content: "క్షమించండి! ",
+          offsetX : -160,
           offsetY: -220,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1797,8 +1800,8 @@ update : function()
          {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nmidnight in Russia and collected the element Cobalt (Co).",
-          offsetX : 0,
+           content: "రష్యాలో అర్ధరాత్రి అయ్యేట్లు భూమిని తిప్పాలి మరియు \nకోబాల్ట్ (Co) మూలకం సేకరించాలి.",
+          offsetX : -45,
           offsetY: -170,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -1810,7 +1813,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -145,
+          offsetX : -130,
           offsetY: -120,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -2027,24 +2030,24 @@ playGame3.prototype =
   //country[3] = game.add.text(247,17,country_name[3],style5);
   //time_of_day[3] = game.add.text(342  ,17,time_of_day_text[3],style5);
   //elementname[3] = game.add.text(280,48,elementname_text[3],style5);
-  clue_line_one[3] = game.add.text(180,17,'Move to         at the ',style1);
-  clue_line_two[3] = game.add.text(180,48,'You will find        along the bay.',style1);
+  clue_line_one[3] = game.add.text(180,17,'కొత్త రోజు ప్రారంభంలో  పెరూ కి వెళ్లండి ;',style1);
+  clue_line_two[3] = game.add.text(180,48,'మీరు బే గుండా టిన్ కనుగొంటారు.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[3] = game.add.button(140,590,'game_astro',this.reset_function_four,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[3] = game.add.button(252,598,'buttons',this.submit_function_three,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[3] = game.add.button(140,598,'reset',this.reset_function_four,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[3] = game.add.button(252,598,'buttons',this.submit_function_three,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[3] = game.add.button(360,598,'buttons',this.next_stage_four,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
-  //submit_buttons[3] = game.add.button(272,598,'buttons',this.submit_function_three,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
-  earth_np = game.add.sprite(308,353,'game_astri','TELGU_SOUTH_EARTH');
+  //submit_buttons[3] = game.add.button(272,598,'buttons',this.submit_function_three,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
+  earth_np = game.add.sprite(308,353,'game_astro','TELGU_SOUTH_EARTH');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
              
              clockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_four,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
-            clockwise_arrow.scale.setTo(0.85,0.85);
+            clockwise_arrow.scale.setTo(0.98,0.98);
             clockwise_arrow.anchor.setTo(0.5,0.5);
                   clockwise_arrow.onInputOver.add(this.input_function,this);
             clockwise_arrow.onInputOut.add(this.input_function_stop,this);
@@ -2180,7 +2183,7 @@ reset_function_four : function()
         {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -2192,7 +2195,7 @@ reset_function_four : function()
          {
           
            type : "text",
-           content: "You found Tin (Sn).",
+           content: "మీరు టిన్ (Sn) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -190,
           fontFamily: "tahoma",
@@ -2270,10 +2273,10 @@ reset_function_four : function()
                       reg.modal.hideModal("modal2");
                     }
         },
-        {
+       {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -2285,7 +2288,7 @@ reset_function_four : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -2298,8 +2301,8 @@ reset_function_four : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -2307,11 +2310,11 @@ reset_function_four : function()
           color: "0xeeeeee",
 
         },
-        {
+           {
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -2319,6 +2322,7 @@ reset_function_four : function()
           color: "0xeeeeee",
 
         },
+
           ]
         
     });
@@ -2350,9 +2354,9 @@ reset_function_four : function()
         {
           
            type : "text",
-           content: "Sorry!",
-          offsetX : -160,
-          offsetY: -240,
+           content: "క్షమించండి!",
+          offsetX : -140,
+          offsetY: -230,
           fontFamily: "tahoma",
           fontSize: 17,
           align: "left",
@@ -2362,9 +2366,9 @@ reset_function_four : function()
          {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is early\nmorning in Peru and collected the element Tin (Sn).",
-          offsetX : 10,
-          offsetY: -195,
+           content: "మీరు పెరూలో సూర్యోదయం అయ్యేట్లు భూమిని తిప్పాలి\nమరియు టిన్ (Sn) మూలకం సేకరించాలి.",
+          offsetX : -25,
+          offsetY: -185,
           fontFamily: "tahoma",
           fontSize: 17,
           align: "left",
@@ -2376,7 +2380,7 @@ reset_function_four : function()
            type : "text",
            content: "Click X to continue.",
           offsetX : -115,
-          offsetY: -150,
+          offsetY: -140,
           fontFamily: "tahoma",
           fontSize: 17,
           align: "left",
@@ -2592,25 +2596,25 @@ playGame4.prototype =
   //country[4] = game.add.text(248,17,country_name[4],style5);
   //time_of_day[4] = game.add.text(385,17,time_of_day_text[4],style5);
   //elementname[4] = game.add.text(312,48,elementname_text[4],style5);
-  clue_line_one[4] = game.add.text(180,17,'Move to             when the',style1);
-  clue_line_two[4] = game.add.text(180,48,'Look around and          you will get.',style1);
+  clue_line_one[4] = game.add.text(180,17,'సూర్యాస్తమయం అవుతుండగా మెక్సికో వెళ్లండి ;',style1);
+  clue_line_two[4] = game.add.text(180,48,'చుట్టూ చూడండి మరియు మీరు సిల్వర్ పొందుతారు.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[4] = game.add.button(140,590,'game_astro',this.reset_function_five,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[4] = game.add.button(252,598,'buttons',this.submit_function_four,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[4] = game.add.button(140,598,'reset',this.reset_function_five,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[4] = game.add.button(252,598,'buttons',this.submit_function_four,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[4] = game.add.button(360,598,'buttons',this.next_stage_five,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
 
-  //submit_buttons[4] = game.add.button(272,598,'buttons',this.submit_function_four,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  //submit_buttons[4] = game.add.button(272,598,'buttons',this.submit_function_four,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   earth_np = game.add.sprite(308,353,'game_astro','TELGU_NORTH_EARTH_new');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
             
-              anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_five,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
-            anticlockwise_arrow.scale.setTo(0.85,0.85);
+              anticlockwise_arrow = game.add.button(305,350,'game_astri',this.input_function_five,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
+            anticlockwise_arrow.scale.setTo(1.07,1.07);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
             
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
@@ -2748,7 +2752,7 @@ earth_np.angle = 0;
          {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -2760,7 +2764,7 @@ earth_np.angle = 0;
          {
           
            type : "text",
-           content: "You found Silver (Ag).",
+           content: "మీరు సిల్వర్ (Ag) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -190,
           fontFamily: "tahoma",
@@ -2841,7 +2845,7 @@ earth_np.angle = 0;
         {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -2853,7 +2857,7 @@ earth_np.angle = 0;
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -2866,8 +2870,8 @@ earth_np.angle = 0;
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -2875,11 +2879,11 @@ earth_np.angle = 0;
           color: "0xeeeeee",
 
         },
-        {
+           {
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -2887,6 +2891,7 @@ earth_np.angle = 0;
           color: "0xeeeeee",
 
         },
+
           ]
         
     });
@@ -2918,8 +2923,8 @@ earth_np.angle = 0;
          {
           
            type : "text",
-           content: "Sorry! ",
-          offsetX : -160,
+           content: "క్షమించండి!  ",
+          offsetX : -120,
           offsetY: -235,
           fontFamily: "tahoma",
           fontSize: 16,
@@ -2930,7 +2935,7 @@ earth_np.angle = 0;
         {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nevening in Mexico and collected the element Silver (Ag).",
+           content: "మీరు మెక్సికోలో సాయంత్రం అయ్యేట్లు భూమిని తిప్పాలి \nమరియు సిల్వర్ (Ag) మూలకం సేకరించాలి.",
           offsetX : 0,
           offsetY: -195,
           fontFamily: "tahoma",
@@ -2943,7 +2948,7 @@ earth_np.angle = 0;
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -90,
           offsetY: -150,
           fontFamily: "tahoma",
           fontSize: 15,
@@ -3139,9 +3144,17 @@ playGame5.prototype =
       }
       else
       {
+        if(i==5)
+        {
+            holders[i] = game.add.sprite(728,133 + (j*124),'game_astro',element_holder_names[i]);
+             j = j +1;
+        }
+        else
+        {
         holders[i] = game.add.sprite(728,133 + (j*124),'game_astri',element_holder_names[i]);
       j = j +1;
       }
+    }
     }
   }
    var style = { font: "bold 18px tahoma", fill: "#00FF7F", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -3157,19 +3170,19 @@ playGame5.prototype =
   //country[5] = game.add.text(230,17,country_name[5],style5);
   //time_of_day[5] = game.add.text(405,17,time_of_day_text[5],style5);
   //elementname[5] = game.add.text(250,48,elementname_text[5],style5);
-  clue_line_one[5] = game.add.text(180,17,'Go to           when the Sun is ',style1);
-  clue_line_two[5] = game.add.text(180,48,'Precious               is easy to come by.',style1);
+  clue_line_one[5] = game.add.text(180,17,'సూర్యుడు ఆకాశంలో పైన ఉన్నప్పుడు బ్రజిల్ వెళ్లండి;',style1);
+  clue_line_two[5] = game.add.text(180,48,'విలువైన ప్లాటినం సులువుగా వస్తుంది.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-   reset_btn[5] = game.add.button(140,590,'game_astro',this.reset_function_six,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[5] = game.add.button(252,598,'buttons',this.submit_function_five,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+   reset_btn[5] = game.add.button(140,598,'reset',this.reset_function_six,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[5] = game.add.button(252,598,'buttons',this.submit_function_five,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[5] = game.add.button(360,598,'buttons',this.next_stage_six,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
-  //submit_buttons[5] = game.add.button(272,598,'buttons',this.submit_function_five,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
-  earth_np = game.add.sprite(308,353,'game_astri','TELGU_SOUTH_EARTH');
+  //submit_buttons[5] = game.add.button(272,598,'buttons',this.submit_function_five,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
+  earth_np = game.add.sprite(308,353,'game_astro','TELGU_SOUTH_EARTH');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
              
@@ -3309,7 +3322,7 @@ update : function()
         {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -3321,7 +3334,7 @@ update : function()
          {
           
            type : "text",
-           content: "You found Platinum (Pt), the next element in the list.",
+           content: "మీరు జాబితాలో తరువాతి మూలకం ప్లాటినం (Pt) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -180,
           fontFamily: "tahoma",
@@ -3403,7 +3416,7 @@ update : function()
          {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -3415,7 +3428,7 @@ update : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -3428,8 +3441,8 @@ update : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -3437,11 +3450,11 @@ update : function()
           color: "0xeeeeee",
 
         },
-        {
+           {
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -3480,8 +3493,8 @@ update : function()
         {
           
            type : "text",
-           content: "Sorry! ",
-          offsetX : -170,
+           content: "క్షమించండి!  ",
+          offsetX : -120,
           offsetY: -220,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -3492,7 +3505,7 @@ update : function()
         {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nnoon in Brazil and collected the element Platinum (Pt).",
+           content: "మీరు బ్రజిల్ లో మధ్యాహ్నం అయ్యేట్లు భూమిని తిప్పాలి \nమరియు ప్లాటినం (Pt) మూలకం సేకరించాలి.",
           offsetX : 0,
           offsetY: -170,
           fontFamily: "tahoma",
@@ -3505,7 +3518,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -130,
+          offsetX : -90,
           offsetY: -120,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -3701,12 +3714,20 @@ playGame6.prototype =
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
-      else
+         else
       {
+        if(i==5)
+        {
+            holders[i] = game.add.sprite(728,133 + (j*124),'game_astro',element_holder_names[i]);
+             j = j +1;
+        }
+        else
+        {
         holders[i] = game.add.sprite(728,133 + (j*124),'game_astri',element_holder_names[i]);
       j = j +1;
       }
     }
+      }
   }
   var style = { font: "bold 18px tahoma", fill: "#00FF7F", boundsAlignH: "center", boundsAlignV: "middle" };
    var style0 = { font: "bold 18px tahoma", fill: "#00FFFF", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -3721,25 +3742,25 @@ playGame6.prototype =
   //country[6] = game.add.text(320,48,country_name[6],style5);
   //time_of_day[6] = game.add.text(270,17,time_of_day_text[6],style5);
   //elementname[6] = game.add.text(429,48,elementname_text[6],style5);
-  clue_line_one[6] = game.add.text(180,17,'In the early             when the Sun drives away the cold.',style1);
-  clue_line_two[6] = game.add.text(180,48,'Visit the desert of           to find ',style1);
+  clue_line_one[6] = game.add.text(180,17,'సూర్యుడు చలిని వెళ్లగొడుతున్నప్పుడు సూర్యోదయంలో,',style1);
+  clue_line_two[6] = game.add.text(180,48,'గోల్డ్ కనుగొనడానికి ఈజిప్టు ఎడారి ఇసుక నేలలను సందర్శించండి.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
   
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[6] = game.add.button(140,590,'game_astro',this.reset_function_seven,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[6] = game.add.button(252,598,'buttons',this.submit_function_six,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[6] = game.add.button(140,598,'reset',this.reset_function_seven,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[6] = game.add.button(252,598,'buttons',this.submit_function_six,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[6] = game.add.button(360,598,'buttons',this.next_stage_seven,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
-  //submit_buttons[6] = game.add.button(272,598,'buttons',this.submit_function_six,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  //submit_buttons[6] = game.add.button(272,598,'buttons',this.submit_function_six,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   earth_np = game.add.sprite(308,353,'game_astro','TELGU_NORTH_EARTH_new');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
             
-              anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_seven,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
-            anticlockwise_arrow.scale.setTo(0.85,0.85);
+              anticlockwise_arrow = game.add.button(305,350,'game_astri',this.input_function_seven,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
+            anticlockwise_arrow.scale.setTo(1.07,1.07);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
             anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
@@ -3873,7 +3894,7 @@ update : function()
          {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -240,
           fontFamily: "tahoma",
@@ -3885,7 +3906,7 @@ update : function()
          {
           
            type : "text",
-           content: "You found Gold (Au), the element mentioned in the clue.",
+           content: "మీరు ఆధారంలో తెలిపిన మూలకం గోల్డ్ (Au) కనుగొన్నారు.",
           offsetX : 0,
           offsetY: -200,
           fontFamily: "tahoma",
@@ -3963,10 +3984,10 @@ update : function()
                       reg.modal.hideModal("modal2");
                     }
         },
-        {
+         {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -3978,7 +3999,7 @@ update : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -3991,8 +4012,8 @@ update : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -4000,19 +4021,18 @@ update : function()
           color: "0xeeeeee",
 
         },
-        {
+           {
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
           align: "left",
           color: "0xeeeeee",
 
-        },
-          ]
+        },  ]
         
     });
    reg.modal.createModal({
@@ -4043,8 +4063,8 @@ update : function()
         {
           
            type : "text",
-           content: "Sorry! ",
-          offsetX : -150,
+           content: "క్షమించండి!  ",
+          offsetX : -110,
           offsetY: -235,
           fontFamily: "tahoma",
           fontSize: 16,
@@ -4055,7 +4075,7 @@ update : function()
         {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nmorning in Egypt and collected the element Gold (Au).",
+           content: "మీరు ఈజిప్టులో ఉదయం అయ్యేట్లు భూమిని తిప్పాలి \nమరియు గోల్డ్ (Au) మూలకం సేకరించాలి.",
           offsetX : 0,
           offsetY: -200,
           fontFamily: "tahoma",
@@ -4068,7 +4088,7 @@ update : function()
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -125,
+          offsetX : -80,
           offsetY: -160,
           fontFamily: "tahoma",
           fontSize: 16,
@@ -4266,11 +4286,19 @@ playGame7.prototype =
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
-      else
+         else
       {
+        if(i==5)
+        {
+            holders[i] = game.add.sprite(728,133 + (j*124),'game_astro',element_holder_names[i]);
+             j = j +1;
+        }
+        else
+        {
         holders[i] = game.add.sprite(728,133 + (j*124),'game_astri',element_holder_names[i]);
       j = j +1;
       }
+    }
     }
   }
   var style = { font: "bold 18px tahoma", fill: "#00FF7F", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -4286,23 +4314,23 @@ playGame7.prototype =
   //country[7] = game.add.text(232,17,country_name[7],style5);
   //time_of_day[7] = game.add.text(360,17,time_of_day_text[7],style5);
   //elementname[7] = game.add.text(180,48,elementname_text[7],style5);
-  clue_line_one[7] = game.add.text(180,17,'Go to                     at ',style1);
-  clue_line_two[7] = game.add.text(180,48,'            in the form of diamonds sparkles bright.',style1);
+  clue_line_one[7] = game.add.text(180,17,'అర్ధరాత్రి దక్షిణ ఆఫ్రికా కి వెళ్లండి; ',style1);
+  clue_line_two[7] = game.add.text(180,48,'కార్బన్ ప్రకాశంతో వెలిగే డైమండ్ల రూపంలో ఉన్నది.',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-   var submit = game.add.text(512,78,'Submit',style3);
+   var submit = game.add.text(618,78,'సబ్మిట్',style3);
  
  // clue_text1 = game.add.text(180,17,'Go to South Africa at midnight;\nCarbon in the form of diamonds sparkles bright',style1);
   //clue_text1.wordWrap = true;
   //clue_text1.wordWrapWidth = 270;
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
-  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'RULE_ROLLOVER','RULE_NORMAL','RULE_MOUSEDOWN');
-  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'DEMO_ROLLOVER','DEMO_NORMAL','DEMO_MOUSEDOWN');
-  reset_btn[7] = game.add.button(140,590,'game_astro',this.reset_function_eight,this,'RESET_BUTTON_ROLLOVER','RESET_BUTTON_NORMAL','RESET_BUTTON_MOUSE_DOWN');
-  submit_buttons[7] = game.add.button(252,598,'buttons',this.submit_function_seven,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
+  rules_button = game.add.button(0,122,'buttons',this.rules_button_function,this,'TELGU_RULE_BUTTON_ROLLOVER','TELGU_RULE_BUTTON_NORMAL','TELGU_RULE_BUTTON_MOUSEDOWN');
+  demo_button = game.add.button(0,154,'buttons',this.demo_button_function,this,'TELGU_DEMO_BUTTON_ROLLOVER','TELGU_DEMO_BUTTON_NORMAL','TELGU_DEMO_BUTTON_MOUSE_DOWN');
+  reset_btn[7] = game.add.button(140,598,'reset',this.reset_function_eight,this,'TELUGU_RESETBUTTON_MOUSEOVER','TELUGU_RESETBUTTON_NORMAL','TELUGU_RESETBUTTON_rollover');
+  submit_buttons[7] = game.add.button(252,598,'buttons',this.submit_function_seven,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
   next_buttons[7] = game.add.button(360,598,'buttons',this.next_stage_seven,this,'TELGU_NEXT_BUTTON_ROLLOVER','TELGU_NEXT_BUTTON_NORMAL','TELGU_NEXT_BUTTON_MOUSE_DOWN');
-  //submit_buttons[7] = game.add.button(272,598,'buttons',this.submit_function_seven,this,'SUBMIT_BUTTON_ROLLOVER','SUBMIT_BUTTON_NORMAL','SUBMIT_BUTTON_MOUSE_DOWN');
-  earth_np = game.add.sprite(308,353,'game_astri','TELGU_SOUTH_EARTH');
+  //submit_buttons[7] = game.add.button(272,598,'buttons',this.submit_function_seven,this,'TELGU_SUBMIT_BUTTON_ROLLOVER','TELGU_SUBMIT_BUTTON_NORMAL','TELGU_SUBMIT_BUTTON_MOUSEDOWN');
+  earth_np = game.add.sprite(308,353,'game_astro','TELGU_SOUTH_EARTH');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
              
@@ -4444,7 +4472,7 @@ update : function()
           {
           
            type : "text",
-           content: "Well done!",
+           content: "బాగా చేసారు! ",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -4456,7 +4484,7 @@ update : function()
          {
           
            type : "text",
-           content: "You found Diamond.Diamond is a form of Carbon (C).",
+           content: "మీరు డైమండ్ ని కనుగొన్నారు. డైమండ్ కార్బన్ (C) యొక్క ఒక రూపం.",
           offsetX : 0,
           offsetY: -180,
           fontFamily: "tahoma",
@@ -4478,7 +4506,7 @@ update : function()
 
         },
          {
-            type: "image",
+            type: "sprite",
              atlasParent : 'game_astro',
             content: 'TELGU_ANSWER8',
             //content: "close_button",
@@ -4534,10 +4562,10 @@ update : function()
                       reg.modal.hideModal("modal2");
                     }
         },
-         {
+          {
           
            type : "text",
-           content: "That is not correct.",
+           content: "అది సరియైనది కాదు.",
           offsetX : -135,
           offsetY: -160,
           fontFamily: "tahoma",
@@ -4549,7 +4577,7 @@ update : function()
          {
           
            type : "text",
-           content: "Notice that the clue mentions the time of day and a \ncountry. Find the name of the country and time of day \nfrom the clue. Rotate the Earth so that the time and \nplace are correct. Try Again.",
+           content: "రోజులో సమయాన్ని మరియు ఒక దేశాన్ని ఆధారం తెలుపుతుందని \nగమనించండి. ఆధారం నుండి దేశం యొక్క పేరు మరియు \nరోజులో సమయాన్ని కనుగొనండి. సమయం మరియు ప్రదేశం\nసరిగా ఉండేట్లు భూమిని తిప్పండి. మళ్లీ ప్రయత్నించండి.",
           offsetX : 0,
           offsetY: -60,
           fontFamily: "tahoma",
@@ -4562,8 +4590,8 @@ update : function()
               {
           
            type : "text",
-           content: "If you need help with the activity, click the \nDemo button.",
-          offsetX : -40,
+           content: "కార్యకలాపం గురించి మీకు సహాయం కావాలంటే, \nడెమో బటన్‌ని క్లిక్ చేయండి.",
+          offsetX : -50,
           offsetY: 30,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -4571,11 +4599,11 @@ update : function()
           color: "0xeeeeee",
 
         },
-        {
+           {
           
            type : "text",
            content: "Click X to continue.",
-          offsetX : -135,
+          offsetX : -115,
           offsetY: 100,
           fontFamily: "tahoma",
           fontSize: 17,
@@ -4613,7 +4641,7 @@ update : function()
          {
           
            type : "text",
-           content: "Sorry! ",
+           content: "క్షమించండి!",
           offsetX : -150,
           offsetY: -235,
           fontFamily: "tahoma",
@@ -4625,8 +4653,8 @@ update : function()
          {
           
            type : "text",
-           content: "You should have rotated the Earth so that it is \nmidnight in South Africa and collected the\n element Diamond. Diamond is a form of Carbon (C).",
-          offsetX : 5,
+           content: "దక్షిణ ఆఫ్రికాలో అర్ధరాత్రి అయ్యేట్లు భూమిని తిప్పాలి \nమరియు డైమండ్ మూలకం సేకరించాలి. డైమండ్\nకార్బన్ (C) యొక్క ఒక రూపం.",
+          offsetX : -38,
           offsetY: -180,
           fontFamily: "tahoma",
           fontSize: 16,
@@ -4647,7 +4675,7 @@ update : function()
 
         },
          {
-            type: "image",
+            type: "sprite",
            atlasParent : 'game_astro',
             content: 'TELGU_ANSWER8',
             //content: "close_button",
@@ -4834,35 +4862,45 @@ conclusion_screen.prototype =
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
+
       else
       {
+        if(i==5)
+        {
+            holders[i] = game.add.sprite(728,133 + (j*124),'game_astro',element_holder_names[i]);
+          j = j +1;
+
+        }
+        else
+        {
         holders[i] = game.add.sprite(728,133 + (j*124),'game_astri',element_holder_names[i]);
       j = j +1;
       }
     }
+    }
   }
      if(score==8)
      {
-      text_final = "Congratulations! You have collected all the elements and won the మూలకాల వేట!";
+      text_final = "శుభాభినందనలు! మీరు అన్ని మూలకాలు సేకరించారు మరియు మూలకాల వేటని గెలిచారు!";
      }
      else if(score <= 7 && score >=5)
      {
-      text_final = "That was close! You just missed winning the prize. Better luck next time.";
+      text_final = "అది చాలా సమీపంగా ఉంది! మీరు బహుమతి గెలవడం తృటిలో తప్పారు. తరువాతి సారి అదృష్టం కలుగుగాక.";
      }
      else
      {
-      text_final = "Another team won the prize. Better luck next time."
+      text_final = "ఇంకొక బృందం బహుమతిని గెలిచింది. తరువాతి సారి అదృష్టం కలుగుగాక."
      }
   //submit_button = game.add.button()
   var style = { font: "30px tahoma", fill: "#00FF7F", boundsAlignH: "center", boundsAlignV: "middle" };
-  screen_text[12] = game.add.text(373,35,'Game End',style);
+  screen_text[12] = game.add.text(373,35,'కార్యకలాపం ముగింపు',style);
   var style1 = { font: "bold 20px tahoma", fill: "#00C7FF", boundsAlignH: "center", boundsAlignV: "middle" };
-  screen_text[13] = game.add.text(130,180,'You have reached the end of the మూలకాల వేట!',style1)
+  screen_text[13] = game.add.text(130,180,'మీరు కార్యకలాపం ముగింపుకి వచ్చారు.',style1)
   screen_text[14] = game.add.text(130,312,text_final,style1);
   screen_text[14].wordWrap = true;
   screen_text[14].wordWrapWidth = 380;
   var style2 = { font: "20px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
-  screen_text[15] = game.add.text(130,440,'Close this tab and return to the first tab to continue.',style2);
+  screen_text[15] = game.add.text(130,440,'ఈ ట్యాబ్ మూసేయండి మరియు కొనసాగటానికి 1వ ట్యాబ్ కి తిరిగి రండి.',style2);
   screen_text[15].wordWrap = true;
   screen_text[15].wordWrapWidth = 380;
   },
@@ -5343,7 +5381,7 @@ game.state.add('VideoScreen8',VideoScreen8);
 game.state.add('hunter_name_screen',hunter_name_screen);
 game.state.add('start_screen',start_screen);
 game.state.add('conclusion_screen',conclusion_screen);
-game.state.start('start_screen');
+game.state.start('PlayGame4');
 }
 
 

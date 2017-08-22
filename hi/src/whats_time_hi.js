@@ -75,7 +75,7 @@
   var style = { font: "23px tahoma", fill: "#00C7FF", boundsAlignH: "center", boundsAlignV: "middle" };
   screen_text[0] = game.add.text(167,100,'एस्ट्रोमर: कितने बजे हैं ?',style);
   var style1 = { font: "16px tahoma", fill: "#00C7FF", boundsAlignH: "center", boundsAlignV: "middle" };
-  screen_text[1] = game.add.text(165,166,'रासायनिक तत्व वे मूलभूत इकाई हैं जो ब्रह्माण्ड का निर्माण करते हैं। अंतरराष्ट्रीय तत्व अन्वेषण संस्थान इन बहुमूल्य तत्वों को खोजने वालों को इनाम दे रहा है| इनाम जीतने के लिए आपको और आपके साथियों को संस्थान के उपग्रह द्वारा भेजे गए संकेत समझने होंगे जिनकी मदद से आप इन तत्वों को खोजकर इकट्ठा कर सकते हैं| कुल आठ तत्व हैं। जो समूह सबसे ज़्यादा तत्वों   को इकट्ठा करेगा, वो जीत जाएगा!',style1);
+  screen_text[1] = game.add.text(165,166,'रासायनिक तत्व वे मूलभूत इकाई हैं जो ब्रह्माण्ड का निर्माण करते हैं। अंतरराष्ट्रीय तत्व अन्वेषण संस्थान इन बहुमूल्य तत्वों को खोजने वालों को इनाम दे रहा है| इनाम जीतने के लिए आपको और आपके साथियों को संस्थान के उपग्रह द्वारा भेजे गए संकेत समझने होंगे जिनकी मदद से आप इन तत्वों को खोजकर इकट्ठा कर सकते हैं| कुल आठ तत्व हैं। जो समूह सबसे ज़्यादा तत्वों को इकट्ठा करेगा, वो जीत जाएगा!',style1);
   screen_text[1].wordWrap = true;
   screen_text[1].wordWrapWidth = 380;
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -83,7 +83,7 @@
   screen_text[5].wordWrap = true;
   screen_text[5].wordWrapWidth = 380;
   screen_text[2] = game.add.text(162,360,'गतिविधि के नियम जानने के लिए नियम बटन पर क्लिक करें।',style2);
-  screen_text[3] = game.add.text(162,390,'तत्व कैसे इकट्ठा करने है यह समझने के लिए उदाहरण देखें बटन पर क्लिक करें।',style2);
+  screen_text[3] = game.add.text(162,390,'तत्व कैसे इकट्ठा करने है यह समझने के लिए डेमो बटन पर क्लिक करें।',style2);
   screen_text[4] = game.add.text(162,420,'शुरु करने के लिए शुरु करें बटन पर क्लिक करें।',style2);
   start_button = game.add.button(362,531,'buttons_hi',this.start_function,this,'HINDI_START_BUTTON_ROLL_OVER','HINDI_START_BUTTON_NORMAL','HINDI_START_BUTTON_MOUSEDOWN');
   rules_button = game.add.button(629,140,'buttons_hi',this.rules_button_function,this,'HINDI_RULES_REVERSE_SIDE_ROLLOVER','HINDI_RULES_REVERSE_SIDE_NORMAL','HINDI_RULES_REVERSE_SIDE_MOUSEDOWN');
@@ -567,7 +567,7 @@ update : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -1160,7 +1160,7 @@ console.log('out');
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -60,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -1600,7 +1600,7 @@ update : function()
           {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -1718,7 +1718,7 @@ update : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -2165,7 +2165,7 @@ reset_function_four : function()
         {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -2283,7 +2283,7 @@ reset_function_four : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -2734,7 +2734,7 @@ earth_np.angle = 0;
          {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -225,
           fontFamily: "tahoma",
@@ -2852,7 +2852,7 @@ earth_np.angle = 0;
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -3295,7 +3295,7 @@ update : function()
         {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -3414,7 +3414,7 @@ update : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -3860,7 +3860,7 @@ update : function()
          {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -240,
           fontFamily: "tahoma",
@@ -3978,7 +3978,7 @@ update : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
@@ -4432,7 +4432,7 @@ update : function()
           {
           
            type : "text",
-           content: " जमा करें !",
+           content: " बहुत ख़ूब!",
           offsetX : 0,
           offsetY: -220,
           fontFamily: "tahoma",
@@ -4550,7 +4550,7 @@ update : function()
               {
           
            type : "text",
-           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nउदाहरण देखें बटन पर क्लिक कीजिए। ",
+           content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
           offsetY: 30,
           fontFamily: "tahoma",
