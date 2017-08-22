@@ -5381,7 +5381,7 @@ game.state.add('VideoScreen8',VideoScreen8);
 game.state.add('hunter_name_screen',hunter_name_screen);
 game.state.add('start_screen',start_screen);
 game.state.add('conclusion_screen',conclusion_screen);
-game.state.start('PlayGame4');
+game.state.start('start_screen');
 }
 
 
