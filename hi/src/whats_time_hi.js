@@ -1213,10 +1213,10 @@ console.log('out');
           
            type : "text",
            content: "खेद है! ",
-          offsetX : -100,
-          offsetY: -230,
+          offsetX : -140,
+          offsetY: -235,
           fontFamily: "tahoma",
-          fontSize: 20,
+          fontSize: 17,
           align: "left",
           color: "0x00B8E6",
 
@@ -1224,11 +1224,11 @@ console.log('out');
         {
           
            type : "text",
-           content: "आपने अगला तत्व लिथियम खोज लिया।",
+           content: "लिथियम (Li) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे \nघुमाना चाहिए था कि ऑस्ट्रेलिया में शाम होती।",
           offsetX : 0,
-          offsetY: -200,
+          offsetY: -195,
           fontFamily: "tahoma",
-          fontSize: 20,
+          fontSize: 17,
           align: "left",
           color: "0x00B8E6",
 
@@ -1237,10 +1237,10 @@ console.log('out');
           
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
-          offsetX : -10,
-          offsetY: -170,
+          offsetX : -60,
+          offsetY: -155,
           fontFamily: "tahoma",
-          fontSize: 20,
+          fontSize: 17,
           align: "left",
           color: "0xeeeeee",
 
