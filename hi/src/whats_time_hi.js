@@ -251,6 +251,7 @@
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
     game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+      game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
 
  },
@@ -821,6 +822,7 @@ next_stage_two : function()
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -1393,6 +1395,7 @@ playGame2.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -1955,6 +1958,7 @@ playGame3.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -2522,6 +2526,7 @@ playGame4.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -3086,6 +3091,7 @@ playGame5.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -3651,6 +3657,7 @@ playGame6.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
@@ -4217,6 +4224,7 @@ playGame7.prototype =
     game.load.audio('treasure','assets/sounds/correct.wav');
     //game.load.image('ANSWER8','assets/ANSWER8.png');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
+       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
 
  },
   create : function()
