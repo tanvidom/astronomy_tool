@@ -48,11 +48,9 @@
  var element_hunter_names = [];
  var earth_images = [];
  var next_button;
-<<<<<<< HEAD
+
  var fill_elements = [0,0,0,0,0,0,0,0];
-=======
- var fill_elements = [0,0,0,0,0,0,0,0]; 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
  var elements = [];
  var score = 0;
  //code for starting screen
@@ -131,11 +129,7 @@
                     }
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -146,7 +140,6 @@
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
 
 
           ]
@@ -154,15 +147,7 @@
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
     // yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
@@ -171,18 +156,17 @@
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
 
  }
  var hunter_name_screen = function(game){}
-<<<<<<< HEAD
+
  hunter_name_screen.prototype =
-=======
- hunter_name_screen.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
  {
   init : function()
   {
@@ -229,11 +213,7 @@
     borderWidth: 1,
     borderColor: '#0EC2F5',
     borderRadius: 6,
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 });
     input_answer[1] = game.add.inputField(498,500,{
     font: '11px Arial',
@@ -244,11 +224,7 @@
     borderWidth: 1,
     borderColor: '#0EC2F5',
     borderRadius: 6,
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 });
 
 
@@ -257,7 +233,7 @@
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
@@ -268,11 +244,8 @@
 
 }
  var playGame = function(game){}
-<<<<<<< HEAD
+
  playGame.prototype =
-=======
- playGame.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  {
   init : function()
   {
@@ -285,10 +258,9 @@
    game.load.atlasJSONHash('buttons_hi','assets/buttons_hi1.png','assets/buttons_hi1.json');
    game.load.atlasJSONHash('demo','assets/demo.png','assets/demo.json');
    game.load.image('rules','assets/astro_rules_hi4.png');
-<<<<<<< HEAD
+
    game.load.image('answer12','assets/answer12.png');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
    game.load.webfont('tahoma','Tahoma');
    game.load.atlasJSONHash('game_astro','assets/sprites_2.png','assets/sprites_2.json');
    game.load.audio('click','assets/sounds/submit_click.wav');
@@ -296,10 +268,9 @@
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
     game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
       game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
 
  },
@@ -313,20 +284,11 @@
         treasure_sound = game.add.audio('treasure');
   background = game.add.sprite(0,0,'hindi','HINDI_BACKGROUND_with_sunrays');
 
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     var k = 0;
     var j = 0;
     for(var i = 0;i<8;i++)
     {
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       if(i%2==0)
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
@@ -337,11 +299,7 @@
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   }
    var style = { font: "bold 18px tahoma", fill: "#00FF7F", boundsAlignH: "center", boundsAlignV: "middle" };
    var style0 = { font: "bold 18px tahoma", fill: "#00FFFF", boundsAlignH: "center", boundsAlignV: "middle" };
@@ -370,22 +328,14 @@
   earth_np = game.add.sprite(308,353,'hindi','HINDI_NORTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
               anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_one,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
             anticlockwise_arrow.scale.setTo(0.85,0.85);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
 
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 update : function()
 {
@@ -402,11 +352,7 @@ update : function()
    submit_buttons[0].inputEnabled = false;
    submit_buttons[0].tint = 0x666677;
    anticlockwise_arrow.inputEnabled = false;
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   }
   else
   {
@@ -440,7 +386,7 @@ update : function()
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
@@ -452,20 +398,15 @@ update : function()
             earth_np.angle = earth_np.angle - 5;
             console.log(earth_np.angle);*/
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function : function()
           {
             count_no_of_attempts[0] = count_no_of_attempts[0] + 1;
             if(count_no_of_attempts[0] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
             if(earth_np.angle <= -135.00000000000006  && earth_np.angle >= -185.00000000000006)
             {
               console.log('correct');
@@ -504,11 +445,7 @@ update : function()
           {
             earth_np.angle = 0;
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -533,19 +470,13 @@ update : function()
                     {
                       fill_elements[3] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
         {
 
-=======
-                      
-                    }
-        },
-        {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: "बहुत ख़ूब!",
           offsetX : 0,
@@ -557,11 +488,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने पहले संकेत के तत्व तांबे (Cu) को खोज लिया।",
           offsetX : 0,
@@ -573,11 +500,7 @@ update : function()
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -589,15 +512,11 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
+
             type : "image",
             // atlasParent : 'hindi',
             content: 'answer12',
-=======
-            type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER1',
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -611,11 +530,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यान्ह",
           offsetX : -180,
@@ -627,17 +542,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -663,11 +573,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -679,11 +585,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -696,11 +598,7 @@ update : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -712,11 +610,7 @@ update : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -729,11 +623,7 @@ update : function()
         },
 
           ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -761,11 +651,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -170,
@@ -777,11 +663,7 @@ update : function()
 
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "तांबा इकट्ठा करने के लिए आपको पृथ्वी को ऐसे घुमाना चाहिए \nथा कि भारत में मध्यान्ह होता ।",
           offsetX : -10,
@@ -793,11 +675,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -80,
@@ -816,11 +694,7 @@ update : function()
             offsetX: 40,
             offsetY: 35,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -830,11 +704,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यान्ह",
           offsetX : -180,
@@ -846,17 +716,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -881,11 +746,7 @@ update : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -896,7 +757,7 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
+
 
 
           ]
@@ -904,42 +765,28 @@ update : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -948,42 +795,30 @@ next_question_one:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
 
-=======
-  //making element fly 
-  //elements[0] = game.add.sprite(147,349,'game_astri','copper');
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   if(fill_elements[3] == 1)
   {
 
    //elements[0] = game.add.sprite(156,357,'game_astri','copper');
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         /*var speed = game.rnd.between(4000, 6000);
         bounce = game.add.tween(elements[0]);
         bounce.to({x:737, y: 266},500, Phaser.Easing.Bounce.Out, false, 20, 0, false);
         bounce.start(0,0);
         bounce.onComplete.add(this.startBounceTween, this);*/
-<<<<<<< HEAD
+
 
         holders[3].loadTexture('game_astri',element_holder_names[3]);
         fill_elements[3] = 4;
         treasure_sound.play('',0,1);
        //delay += 200;
-=======
-        
-        holders[3].loadTexture('game_astri',element_holder_names[3]);
-        fill_elements[3] = 4;
-        treasure_sound.play('',0,1);
-       //delay += 200; 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
+
 
 
 
@@ -1013,11 +848,9 @@ next_stage_two : function()
 
 }
   var playGame1 = function(game){}
-<<<<<<< HEAD
+
  playGame1.prototype =
-=======
- playGame1.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
  {
   init : function()
   {
@@ -1038,10 +871,9 @@ next_stage_two : function()
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -1053,7 +885,7 @@ next_stage_two : function()
         yay_sound = game.add.audio('yay');
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -1069,23 +901,7 @@ next_stage_two : function()
       k = k+1;
       }
       else
-=======
- 
-    var k = 0;
-    var j = 0;
-    //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i] == 2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -1094,11 +910,9 @@ next_stage_two : function()
       else
       {
       if(fill_elements[i] ==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -1138,11 +952,7 @@ next_stage_two : function()
   earth_np = game.add.sprite(308,353,'hindi','HINDI_SOUTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
              clockwise_arrow = game.add.button(309,354,'game_astri',this.input_function_one,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
             clockwise_arrow.scale.setTo(1.1,1.1);
             clockwise_arrow.anchor.setTo(0.5,0.5);
@@ -1194,11 +1004,7 @@ input_function_one : function()
 {
   rotation[1] = 1;
 console.log('hi');
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 reset_function_two : function()
 {
@@ -1213,7 +1019,7 @@ console.log('out');
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
@@ -1227,39 +1033,31 @@ console.log('out');
             earth_np.angle = earth_np.angle + 5;
             console.log(earth_np.angle);*/
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_one : function()
           {
             count_no_of_attempts[1] = count_no_of_attempts[1] + 1;
             if(count_no_of_attempts[1] <2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= -104  && earth_np.angle >= -155)
             {
               console.log('correct');
               this.showModal1();
             }
-<<<<<<< HEAD
+
             else
-=======
-            else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             {
              console.log('false');
              this.showModal2();
             }
-<<<<<<< HEAD
+
           }
-=======
-          } 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           else
           {
            if(earth_np.angle <= -104  && earth_np.angle >= -155)
@@ -1283,11 +1081,7 @@ console.log('out');
           {
             game.state.start('VideoScreen2');
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -1312,19 +1106,13 @@ console.log('out');
                     {
                       fill_elements[6] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
         {
 
-=======
-                      
-                    }
-        },
-        {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: "बहुत ख़ूब!",
           offsetX : 0,
@@ -1336,11 +1124,7 @@ console.log('out');
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने अगला तत्व लिथियम (Li) खोज लिया। ",
           offsetX : 0,
@@ -1352,11 +1136,7 @@ console.log('out');
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -1384,11 +1164,7 @@ console.log('out');
             offsetY: -110,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "सूर्यास्त",
           offsetX : -170,
@@ -1400,17 +1176,11 @@ console.log('out');
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -1436,11 +1206,7 @@ console.log('out');
                     }
         },
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -1452,11 +1218,7 @@ console.log('out');
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -1469,11 +1231,7 @@ console.log('out');
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -60,
@@ -1485,11 +1243,7 @@ console.log('out');
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -90,
@@ -1501,11 +1255,7 @@ console.log('out');
 
         },
           ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -1533,11 +1283,7 @@ console.log('out');
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -140,
@@ -1549,11 +1295,7 @@ console.log('out');
 
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "लिथियम (Li) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे \nघुमाना चाहिए था कि ऑस्ट्रेलिया में शाम होती।",
           offsetX : 0,
@@ -1565,11 +1307,7 @@ console.log('out');
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -60,
@@ -1588,11 +1326,7 @@ console.log('out');
             offsetX: 0,
             offsetY: 60,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -1602,11 +1336,7 @@ console.log('out');
             offsetY: -110,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "सूर्यास्त",
           offsetX : 140,
@@ -1618,17 +1348,12 @@ console.log('out');
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -1653,11 +1378,7 @@ console.log('out');
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -1668,7 +1389,7 @@ console.log('out');
           color: "0xeeeeee",
 
         }
-<<<<<<< HEAD
+
 
 
           ]
@@ -1676,42 +1397,28 @@ console.log('out');
     });
   },
   showModal1:function()
-=======
-         
-
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
   {
 
     reg.modal.showModal("modal4");
@@ -1720,22 +1427,16 @@ next_question_two:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[6] == 1)
   {
   holders[6].loadTexture('game_astri',element_holder_names[6]);
   fill_elements[6] = 4;
    treasure_sound.play('',0,1);
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 
   //next_buttons[0] = game.add.button(388,598,'buttons_hi',this.next_stage_two,this,'HINDI_NEXT_BUTTON_ROLL_OVER','HINDI_NEXT_BUTTON_NORMAL','HINDI_NEXT_BUTTON_MOUSE_DOWN');
   }
@@ -1757,11 +1458,9 @@ next_stage_two : function()
 
 }
 var playGame2 = function(game){}
-<<<<<<< HEAD
+
 playGame2.prototype =
-=======
-playGame2.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
    init : function()
   {
@@ -1780,10 +1479,9 @@ playGame2.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -1797,7 +1495,7 @@ playGame2.prototype =
         treasure_sound = game.add.audio('treasure');
     var k = 0;
     var j = 0;
-<<<<<<< HEAD
+
      //adding element holders
     for(var i = 0;i<8;i++)
     {
@@ -1810,20 +1508,7 @@ playGame2.prototype =
       k = k+1;
       }
       else
-=======
-     //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i] ==0 || fill_elements[i] ==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -1832,11 +1517,9 @@ playGame2.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -1874,21 +1557,13 @@ playGame2.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_NORTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
               anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_three,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
             anticlockwise_arrow.scale.setTo(0.85,0.85);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 update : function()
 {
@@ -1905,11 +1580,7 @@ update : function()
    anticlockwise_arrow.inputEnabled = false;
    submit_buttons[2].inputEnabled = false;
    submit_buttons[2].tint = 0x666677;
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   }
   else
   {
@@ -1929,26 +1600,17 @@ update : function()
    earth_np.angle = earth_np.angle - 0.4;
     //rotate_sound.play('',0,1);
   }
-<<<<<<< HEAD
+
 
 },
  /*render : function()
          {
-=======
- 
-},
- /*render : function()
-         { 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
           input_function : function()
           {
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            rotation[2] = 1;
           },
           input_function_stop : function()
@@ -1963,20 +1625,16 @@ update : function()
           {
             earth_np.angle = 0;
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_two : function()
           {
             count_no_of_attempts[2] = count_no_of_attempts[2] + 1;
             if(count_no_of_attempts[2] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= 90  && earth_np.angle >= 45)
             {
               console.log('correct');
@@ -2011,11 +1669,7 @@ update : function()
           {
             game.state.start('VideoScreen3');
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -2040,19 +1694,12 @@ update : function()
                     {
                       fill_elements[4] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
           {
 
-=======
-                      
-                    }
-        },
-          {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -2064,11 +1711,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने अगला तत्व कोबाल्ट (Co) खोज लिया।",
           offsetX : 0,
@@ -2080,11 +1723,7 @@ update : function()
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -2112,11 +1751,7 @@ update : function()
             offsetY: 45,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यरात्रि",
           offsetX : 110,
@@ -2128,17 +1763,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -2164,11 +1794,7 @@ update : function()
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -2180,11 +1806,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -2197,11 +1819,7 @@ update : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -2213,11 +1831,7 @@ update : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -2229,11 +1843,7 @@ update : function()
 
         },
           ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -2261,11 +1871,7 @@ update : function()
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -170,
@@ -2277,11 +1883,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "कोबाल्ट (Co) इकट्ठा करने के लिए आपको पृथ्वी को \nऐसे घुमाना चाहिए था कि रूस में मध्यरात्रि होती।",
           offsetX : -30,
@@ -2293,11 +1895,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -90,
@@ -2317,11 +1915,7 @@ update : function()
             offsetX: -115,
             offsetY: 35,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -2331,11 +1925,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यरात्रि ",
           offsetX : 125,
@@ -2347,17 +1937,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -2382,11 +1967,7 @@ update : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -2397,7 +1978,7 @@ update : function()
           color: "0xeeeeee",
 
         }
-<<<<<<< HEAD
+
 
 
           ]
@@ -2405,42 +1986,29 @@ update : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -2449,11 +2017,9 @@ next_question_three:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[4] == 1)
   {
@@ -2462,11 +2028,7 @@ next_question_three:function()
    fill_elements[4] = 4;
    treasure_sound.play('',0,1);
 
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 
   //next_buttons[2] = game.add.button(388,598,'buttons_hi',this.next_stage_three,this,'HINDI_NEXT_BUTTON_ROLL_OVER','HINDI_NEXT_BUTTON_NORMAL','HINDI_NEXT_BUTTON_MOUSE_DOWN');
   }
@@ -2489,11 +2051,9 @@ next_stage_three : function()
 
 }
 var playGame3 = function(game){}
-<<<<<<< HEAD
+
 playGame3.prototype =
-=======
-playGame3.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
  init : function()
   {
@@ -2512,10 +2072,10 @@ playGame3.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
 
  },
   create : function()
@@ -2527,7 +2087,7 @@ playGame3.prototype =
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
   background = game.add.sprite(0,0,'hindi','HINDI_BACKGROUND_with_sunrays');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -2543,23 +2103,8 @@ playGame3.prototype =
       k = k+1;
       }
       else
-=======
- 
-    var k = 0;
-    var j = 0;
-    //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i] ==0 || fill_elements[i] ==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -2568,11 +2113,9 @@ playGame3.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i] == 2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -2611,11 +2154,7 @@ playGame3.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_SOUTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
              clockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_four,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
             clockwise_arrow.scale.setTo(1.1,1.1);
             clockwise_arrow.anchor.setTo(0.5,0.5);
@@ -2651,11 +2190,9 @@ update : function()
    clockwise_arrow.inputEnabled = true;
      submit_buttons[3].inputEnabled = true;
    submit_buttons[3].tint = 0xffffff;
-<<<<<<< HEAD
+
   }
-=======
-  } 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //
   if(rotation[3] ==1 )
   {
@@ -2664,11 +2201,7 @@ update : function()
    earth_np.angle = earth_np.angle + 0.4;
     //rotate_sound.play('',0,1);
   }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 reset_function_four : function()
 {
@@ -2678,7 +2211,7 @@ reset_function_four : function()
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
@@ -2694,20 +2227,17 @@ reset_function_four : function()
           {
             rotation[3] = 0;
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_three : function()
           {
             count_no_of_attempts[3] = count_no_of_attempts[3] + 1;
             if(count_no_of_attempts[3] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
             if(earth_np.angle <= -85  && earth_np.angle >= -130)
             {
               console.log('correct');
@@ -2742,11 +2272,8 @@ reset_function_four : function()
           {
             game.state.start('VideoScreen4');
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
  createModals: function() {
 
      reg.modal.createModal({
@@ -2771,19 +2298,14 @@ reset_function_four : function()
                     {
                       fill_elements[2] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
         {
 
-=======
-                      
-                    }
-        },
-        {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -2795,11 +2317,6 @@ reset_function_four : function()
 
         },
          {
-<<<<<<< HEAD
-
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने टिन (Sn) खोज लिया।",
           offsetX : 0,
@@ -2811,11 +2328,7 @@ reset_function_four : function()
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -2843,11 +2356,7 @@ reset_function_four : function()
             offsetY: 170,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "नई सुबह",
           offsetX : -170,
@@ -2859,17 +2368,11 @@ reset_function_four : function()
 
         },
 
-<<<<<<< HEAD
 
 
           ]
 
-=======
-         
 
-          ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
  reg.modal.createModal({
         type: "modal2",
@@ -2895,11 +2398,7 @@ reset_function_four : function()
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -2911,11 +2410,7 @@ reset_function_four : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -2928,11 +2423,7 @@ reset_function_four : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -2944,11 +2435,7 @@ reset_function_four : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -2961,11 +2448,7 @@ reset_function_four : function()
         },
 
           ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -2993,11 +2476,7 @@ reset_function_four : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है!",
           offsetX : -160,
@@ -3009,11 +2488,7 @@ reset_function_four : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "टिन (Sn) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे घुमाना\nचाहिए था कि पेरु में सुबह होती।",
           offsetX : 10,
@@ -3025,11 +2500,7 @@ reset_function_four : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -65,
@@ -3049,11 +2520,7 @@ reset_function_four : function()
             offsetX: 0,
             offsetY: 0,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -3063,11 +2530,7 @@ reset_function_four : function()
             offsetY: 170,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "नई सुबह",
           offsetX : -170,
@@ -3079,17 +2542,13 @@ reset_function_four : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -3114,11 +2573,7 @@ reset_function_four : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -3129,7 +2584,7 @@ reset_function_four : function()
           color: "0xeeeeee",
 
         }
-<<<<<<< HEAD
+
 
 
           ]
@@ -3137,42 +2592,28 @@ reset_function_four : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -3181,11 +2622,10 @@ next_question_three:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[2] == 1)
   {
@@ -3217,15 +2657,11 @@ next_stage_four : function()
 
 }
 var playGame4 = function(game){}
-<<<<<<< HEAD
+
 playGame4.prototype =
 {
 
-=======
-playGame4.prototype = 
-{
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   init : function()
   {
      game.load = new CustomLoader(game);
@@ -3243,10 +2679,9 @@ playGame4.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -3258,7 +2693,7 @@ playGame4.prototype =
         yay_sound = game.add.audio('yay');
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -3274,23 +2709,7 @@ playGame4.prototype =
       k = k+1;
       }
       else
-=======
- 
-    var k = 0;
-    var j = 0;
-     //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i]==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -3299,11 +2718,9 @@ playGame4.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -3342,19 +2759,13 @@ playGame4.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_NORTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
+
 
               anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_five,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
             anticlockwise_arrow.scale.setTo(0.85,0.85);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
 
-=======
-            
-              anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_five,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
-            anticlockwise_arrow.scale.setTo(0.85,0.85);
-            anticlockwise_arrow.anchor.setTo(0.5,0.5);
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
              anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
 },
@@ -3373,11 +2784,7 @@ update : function()
    anticlockwise_arrow.inputEnabled = false;
    submit_buttons[4].inputEnabled = false;
    submit_buttons[4].tint = 0x666677;
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   }
   else
   {
@@ -3397,11 +2804,7 @@ update : function()
    earth_np.angle = earth_np.angle - 0.4;
     //rotate_sound.play('',0,1);
   }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 reset_function_five : function()
 {
@@ -3413,17 +2816,13 @@ earth_np.angle = 0;
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
           input_function_five : function()
           {
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
              rotation[4] = 1;
           },
           input_function : function()
@@ -3435,20 +2834,16 @@ earth_np.angle = 0;
            {
               rotation[4] = 0;
            },
-<<<<<<< HEAD
+
                      //the main function which calculates whether answer is right.
-=======
-                     //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_four : function()
           {
             count_no_of_attempts[4] = count_no_of_attempts[4] + 1;
             if(count_no_of_attempts[4] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= -55  && earth_np.angle >= -110)
             {
               console.log('correct');
@@ -3483,11 +2878,7 @@ earth_np.angle = 0;
           {
             game.state.start('VideoScreen5');
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -3512,19 +2903,13 @@ earth_np.angle = 0;
                     {
                       fill_elements[5] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
          {
 
-=======
-                      
-                    }
-        },
-         {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -3536,11 +2921,7 @@ earth_np.angle = 0;
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने चांदी (Ag) खोज लिया।",
           offsetX : 0,
@@ -3552,11 +2933,7 @@ earth_np.angle = 0;
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -3584,11 +2961,7 @@ earth_np.angle = 0;
             offsetY: 170,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "सूर्यास्त ",
           offsetX : 40,
@@ -3600,17 +2973,11 @@ earth_np.angle = 0;
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -3636,11 +3003,7 @@ earth_np.angle = 0;
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -3652,11 +3015,7 @@ earth_np.angle = 0;
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -3669,11 +3028,7 @@ earth_np.angle = 0;
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -3685,11 +3040,7 @@ earth_np.angle = 0;
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -3701,11 +3052,7 @@ earth_np.angle = 0;
 
         },
    ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -3733,11 +3080,7 @@ earth_np.angle = 0;
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -160,
@@ -3749,11 +3092,7 @@ earth_np.angle = 0;
 
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "चांदी (Ag) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे \nघुमाना चाहिए था कि मेक्सिको में शाम होती।",
           offsetX : -15,
@@ -3765,11 +3104,7 @@ earth_np.angle = 0;
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -85,
@@ -3788,11 +3123,6 @@ earth_np.angle = 0;
             offsetX: -110,
             offsetY: -5,
         },
-<<<<<<< HEAD
-
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -3802,11 +3132,6 @@ earth_np.angle = 0;
             offsetY: 175,
         },
           {
-<<<<<<< HEAD
-
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "सूर्यास्त ",
           offsetX : 50,
@@ -3818,17 +3143,12 @@ earth_np.angle = 0;
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -3853,11 +3173,7 @@ earth_np.angle = 0;
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -3868,7 +3184,7 @@ earth_np.angle = 0;
           color: "0xeeeeee",
 
         }
-<<<<<<< HEAD
+
 
 
           ]
@@ -3876,42 +3192,28 @@ earth_np.angle = 0;
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -3920,11 +3222,9 @@ next_question_four:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[5] == 1)
   {
@@ -3954,11 +3254,10 @@ next_stage_five : function()
 }
 }
 var playGame5 = function(game){}
-<<<<<<< HEAD
+
 playGame5.prototype =
-=======
-playGame5.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
 {
    init : function()
   {
@@ -3977,10 +3276,9 @@ playGame5.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -3992,7 +3290,7 @@ playGame5.prototype =
         yay_sound = game.add.audio('yay');
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -4008,23 +3306,7 @@ playGame5.prototype =
       k = k+1;
       }
       else
-=======
- 
-    var k = 0;
-    var j = 0;
-    //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i]==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -4033,11 +3315,9 @@ playGame5.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -4076,11 +3356,7 @@ playGame5.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_SOUTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
              clockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_six,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
             clockwise_arrow.scale.setTo(1.1,1.1);
             clockwise_arrow.anchor.setTo(0.5,0.5);
@@ -4129,17 +3405,13 @@ update : function()
 <<<<<<< HEAD
          {
 =======
-         { 
+         {
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
           input_function : function()
           {
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
             rotation[5] =1;
           },
           input_function_stop : function()
@@ -4150,20 +3422,16 @@ update : function()
           {
               rotation[5] = 1;
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_five : function()
           {
             count_no_of_attempts[5] = count_no_of_attempts[5] + 1;
             if(count_no_of_attempts[5] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= -25  && earth_np.angle >= -70)
             {
               console.log('correct');
@@ -4202,11 +3470,7 @@ update : function()
           {
              earth_np.angle = 0;
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -4231,19 +3495,13 @@ update : function()
                     {
                       fill_elements[1] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
         {
 
-=======
-                      
-                    }
-        },
-        {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -4255,11 +3513,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने सूची का अगला तत्व प्लैटिनम (Pt) खोज लिया।",
           offsetX : 0,
@@ -4271,11 +3525,7 @@ update : function()
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -4286,11 +3536,7 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
          {
             type: "sprite",
              atlasParent : 'hindi',
@@ -4308,11 +3554,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यान्ह",
           offsetX : -180,
@@ -4324,17 +3566,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -4360,11 +3597,7 @@ update : function()
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -4376,11 +3609,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -4393,11 +3622,7 @@ update : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -4409,11 +3634,7 @@ update : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -4426,11 +3647,7 @@ update : function()
         },
 
            ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -4458,11 +3675,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -170,
@@ -4474,11 +3687,7 @@ update : function()
 
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "प्लैटिनम (Pt) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे \nघुमाना चाहिए था कि ब्राज़ील में मध्यान्ह होता।",
           offsetX : -30,
@@ -4490,11 +3699,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -90,
@@ -4513,11 +3718,7 @@ update : function()
             offsetX: 40,
             offsetY: 35,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -4527,11 +3728,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "मध्यान्ह",
           offsetX : -180,
@@ -4543,17 +3740,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -4578,11 +3770,7 @@ update : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -4593,7 +3781,7 @@ update : function()
           color: "0xeeeeee",
 
         }
-<<<<<<< HEAD
+
 
 
           ]
@@ -4601,42 +3789,28 @@ update : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -4645,11 +3819,9 @@ next_question_five:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[1] == 1)
   {
@@ -4657,11 +3829,7 @@ next_question_five:function()
    treasure_sound.play('',0,1);
    fill_elements[1] = 4;
   submit_buttons[5].inputEnabled = false;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   //submit_buttons[5].inputEnabled = false;
 
   //next_buttons[5] = game.add.button(388,598,'buttons_hi',this.next_stage_five,this,'HINDI_NEXT_BUTTON_ROLL_OVER','HINDI_NEXT_BUTTON_NORMAL','HINDI_NEXT_BUTTON_MOUSE_DOWN');
@@ -4685,11 +3853,9 @@ next_stage_six : function()
 
 }
 var playGame6 = function(game){}
-<<<<<<< HEAD
+
 playGame6.prototype =
-=======
-playGame6.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
     init : function()
   {
@@ -4708,10 +3874,9 @@ playGame6.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -4723,7 +3888,7 @@ playGame6.prototype =
         yay_sound = game.add.audio('yay');
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -4738,24 +3903,7 @@ playGame6.prototype =
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       k = k+1;
       }
-      else
-=======
- 
-    var k = 0;
-    var j = 0;
-     //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i]==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -4764,11 +3912,9 @@ playGame6.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -4799,11 +3945,7 @@ playGame6.prototype =
   var style2 = { font: "16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
   instruction_text = game.add.text(163,78,instruction_text_content,style2);
   rules_button = game.add.button(0,122,'buttons_hi',this.rules_button_function,this,'HINDI_RULE_BUTTON_ROLL_OVER','HINDI_RULE_BUTTON_NORMAL','HINDI_RULE_BUTTON_MOUSE_DOWN');
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   demo_button = game.add.button(0,154,'buttons_hi',this.demo_button_function,this,'HindiDEMO_BUTTON_MOUSEOVER','HindiDEMO_BUTTON_NORMAL','HindiDEMO_BUTTON_MOUSEOVER');
   reset_btn[6] = game.add.button(140,598,'buttons_hi',this.reset_function_seven,this,'HINDI_RESETBUTTON_ROLL_OVER','HINDI_RESETBUTTON_NORMAL','HINDI_RESETBUTTON_MOUSE_DOWN');
   submit_buttons[6] = game.add.button(252,598,'buttons_hi',this.submit_function_six,this,'HINDI_SUBMIT_BUTTON_ROLL_OVER','HINDI_SUBMIT_BUTTON_NORMAL','HINDI_SUBMIT_BUTTON_MOUSE_DOWN');
@@ -4812,21 +3954,13 @@ playGame6.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_NORTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
               anticlockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_seven,this,'ARROW_ANTI_CLOCKWISE_WITH_GLOW','ARROW_ANTI_CLOCKWISE','ARROW_ANTI_CLOCKWISE_WITH_GLOW');
             anticlockwise_arrow.scale.setTo(0.85,0.85);
             anticlockwise_arrow.anchor.setTo(0.5,0.5);
             anticlockwise_arrow.onInputOver.add(this.input_function,this);
             anticlockwise_arrow.onInputOut.add(this.input_function_stop,this);
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 },
 update : function()
 {
@@ -4843,11 +3977,7 @@ update : function()
    anticlockwise_arrow.inputEnabled = false;
    submit_buttons[6].inputEnabled = false;
    submit_buttons[6].tint = 0x666677;
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   }
   else
   {
@@ -4867,17 +3997,12 @@ update : function()
    earth_np.angle = earth_np.angle - 0.4;
     //rotate_sound.play('',0,1);
   }
-<<<<<<< HEAD
+
 
 },
  /*render : function()
          {
-=======
- 
-},
- /*render : function()
-         { 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
           input_function : function()
@@ -4892,20 +4017,14 @@ update : function()
           {
             rotation[6] = 1;
           },
-<<<<<<< HEAD
-          //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_six : function()
           {
             count_no_of_attempts[6] = count_no_of_attempts[6] + 1;
             if(count_no_of_attempts[6] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= -105  && earth_np.angle >= -145)
             {
               console.log('correct');
@@ -4944,11 +4063,7 @@ update : function()
           {
             earth_np.angle = 0;
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -4973,19 +4088,13 @@ update : function()
                     {
                       fill_elements[0] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
          {
 
-=======
-                      
-                    }
-        },
-         {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -4997,11 +4106,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने संकेत में दिया हुआ तत्व सोना (Au) खोज लिया।",
           offsetX : 0,
@@ -5013,11 +4118,7 @@ update : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -5045,11 +4146,7 @@ update : function()
             offsetY: -110,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "भोर का सूरज",
           offsetX : -170,
@@ -5061,17 +4158,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -5097,11 +4189,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -5113,11 +4201,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -5130,11 +4214,7 @@ update : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -5146,11 +4226,7 @@ update : function()
 
         },
            {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -75,
@@ -5163,11 +4239,7 @@ update : function()
         },
 
           ]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -5195,11 +4267,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -150,
@@ -5211,11 +4279,7 @@ update : function()
 
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "सोना (Au) इकट्ठा करने के लिए आपको पृथ्वी को ऐसे \nघुमाना चाहिए था कि मिस्र में सुबह होती।",
           offsetX : -30,
@@ -5227,11 +4291,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -90,
@@ -5242,11 +4302,7 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
          {
             type: "sprite",
              atlasParent : 'hindi',
@@ -5255,11 +4311,7 @@ update : function()
             offsetX: 0,
             offsetY: 60,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -5269,11 +4321,7 @@ update : function()
             offsetY: -110,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "Morning",
           offsetX : -170,
@@ -5285,17 +4333,13 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -5320,11 +4364,7 @@ update : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -5335,7 +4375,7 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
+
 
 
           ]
@@ -5343,42 +4383,28 @@ update : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -5387,11 +4413,9 @@ next_question_six:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[0] == 1)
   {
@@ -5402,11 +4426,7 @@ next_question_six:function()
     treasure_sound.play('',0,1);
    fill_elements[0] = 4;
   submit_buttons[6].inputEnabled = false;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   //next_buttons[6] = game.add.button(388,598,'buttons_hi',this.next_stage_six,this,'HINDI_NEXT_BUTTON_ROLL_OVER','HINDI_NEXT_BUTTON_NORMAL','HINDI_NEXT_BUTTON_MOUSE_DOWN');
   }
   else
@@ -5427,11 +4447,9 @@ next_stage_seven : function()
 }
 }
 var playGame7 = function(game){}
-<<<<<<< HEAD
+
 playGame7.prototype =
-=======
-playGame7.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
   init : function()
   {
@@ -5451,10 +4469,9 @@ playGame7.prototype =
     game.load.audio('treasure','assets/sounds/correct.wav');
     //game.load.image('ANSWER8','assets/ANSWER8.png');
      game.load.atlasJSONHash('hindi','assets/hindi.png','assets/hindi.json');
-<<<<<<< HEAD
+
        game.load.atlasJSONHash('answer_screens_hi','assets/spritesheet_hi.png','assets/sprites_hi.json');
-=======
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 
  },
   create : function()
@@ -5466,7 +4483,7 @@ playGame7.prototype =
         yay_sound = game.add.audio('yay');
         click_sound = game.add.audio('click');
         treasure_sound = game.add.audio('treasure');
-<<<<<<< HEAD
+
 
     var k = 0;
     var j = 0;
@@ -5482,23 +4499,7 @@ playGame7.prototype =
       k = k+1;
       }
       else
-=======
- 
-    var k = 0;
-    var j = 0;
-    //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i]==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -5507,11 +4508,7 @@ playGame7.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
-      {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -5539,11 +4536,7 @@ playGame7.prototype =
   clue_line_two[7] = game.add.text(180,48,'पहुँचो                     जब हो              का अंधेरा ',style1);
   var style3 = { font: "bold 16px tahoma", fill: "#F0E6DB", boundsAlignH: "center", boundsAlignV: "middle" };
    var submit = game.add.text(557,78,' जमा करें ',style3);
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  // clue_text1 = game.add.text(180,17,'Go to South Africa at midnight;\nCarbon in the form of diamonds sparkles bright',style1);
   //clue_text1.wordWrap = true;
   //clue_text1.wordWrapWidth = 270;
@@ -5558,11 +4551,7 @@ playGame7.prototype =
   earth_np = game.add.sprite(308,353,'hindi','HINDI_SOUTH_EARTH_WITHLABLE');
   earth_np.scale.setTo(0.85,0.85);
   earth_np.anchor.setTo(0.5,0.5);
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
              clockwise_arrow = game.add.button(307,354,'game_astri',this.input_function_eight,this,'ARROW_CLOCKWISE_WITH_GLOW','ARROW_CLOCKWISE','ARROW_CLOCKWISE_WITH_GLOW');
             clockwise_arrow.scale.setTo(1.1,1.1);
             clockwise_arrow.anchor.setTo(0.5,0.5);
@@ -5607,26 +4596,17 @@ update : function()
    earth_np.angle = earth_np.angle + 0.4;
     //rotate_sound.play('',0,1);
   }
-<<<<<<< HEAD
+
 
 },
  /*render : function()
          {
-=======
- 
-},
- /*render : function()
-         { 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           game.debug.text('x: ' + game.input.x + ' y: ' + game.input.y, 32, 32);
           }, */
           input_function : function()
           {
-<<<<<<< HEAD
 
-=======
-             
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
             rotation[7] = 1;
           },
           input_function_stop : function()
@@ -5641,20 +4621,16 @@ update : function()
           {
              earth_np.angle = 0;
           },
-<<<<<<< HEAD
+
           //the main function which calculates whether answer is right.
-=======
-          //the main function which calculates whether answer is right. 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
           submit_function_seven : function()
           {
             count_no_of_attempts[7] = count_no_of_attempts[7] + 1;
             if(count_no_of_attempts[7] < 2)
-<<<<<<< HEAD
+
             {
-=======
-            {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
             if(earth_np.angle <= 85  && earth_np.angle >= 40)
             {
               console.log('correct');
@@ -5689,11 +4665,7 @@ update : function()
           {
             game.state.start('VideoScreen8');
           },
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  createModals: function() {
 
      reg.modal.createModal({
@@ -5718,19 +4690,13 @@ update : function()
                     {
                       fill_elements[7] = 1;
                       reg.modal.hideModal("modal1");
-<<<<<<< HEAD
+
 
                     }
         },
           {
 
-=======
-                      
-                    }
-        },
-          {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: " बहुत ख़ूब!",
           offsetX : 0,
@@ -5742,11 +4708,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आपने हीरा खोज लिया| हीरा कार्बन (C) का ही एक अभिरूप है।",
           offsetX : 0,
@@ -5758,11 +4720,7 @@ update : function()
 
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -5790,11 +4748,7 @@ update : function()
             offsetY: 45,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आधी रात",
           offsetX : 110,
@@ -5806,17 +4760,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal2",
@@ -5842,11 +4791,7 @@ update : function()
                     }
         },
         {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यह सही नहीं है।",
           offsetX : -135,
@@ -5858,11 +4803,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "गौर कीजिए कि संकेत में समय और देश का नाम दिया गया है।\nपृथ्वी को ऐसे घुमाइए कि समय और स्थान दोनों सही हों। \nफिर से कोशिश कीजिए| ",
           offsetX : 0,
@@ -5875,11 +4816,7 @@ update : function()
         },
 
               {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "यदि आपको गतिविधि करने में मदद चाहिए तो \nडेमो बटन पर क्लिक कीजिए। ",
           offsetX : -45,
@@ -5890,15 +4827,11 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
+
 
         {
 
-=======
-        
-        {
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -70,
@@ -5909,11 +4842,7 @@ update : function()
           color: "0xeeeeee",
 
         },]
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
     });
    reg.modal.createModal({
         type: "modal3",
@@ -5941,11 +4870,7 @@ update : function()
                     }
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "खेद है! ",
           offsetX : -150,
@@ -5957,11 +4882,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "हीरा इकट्ठा करने के लिए आपको पृथ्वी को ऐसे घुमाना चाहिए\nदक्षिण अफ्रीका में आधी रात होती।\nहीरा कार्बन (C) का ही एक अभिरूप है।",
           offsetX : 5,
@@ -5973,11 +4894,7 @@ update : function()
 
         },
          {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : -70,
@@ -5996,11 +4913,7 @@ update : function()
             offsetX: -115,
             offsetY: 30,
         },
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
           {
             type: "sprite",
              atlasParent : 'game_astri',
@@ -6010,11 +4923,7 @@ update : function()
             offsetY: 18,
         },
           {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आधी रात",
           offsetX : 125,
@@ -6026,17 +4935,12 @@ update : function()
 
         },
 
-<<<<<<< HEAD
 
 
-          ]
-
-=======
-         
 
           ]
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
     });
  reg.modal.createModal({
         type: "modal4",
@@ -6061,11 +4965,7 @@ update : function()
                     }
         },
             {
-<<<<<<< HEAD
 
-=======
-          
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
            type : "text",
            content: "आगे जाने के लिए X पर क्लिक करें।",
           offsetX : 0,
@@ -6076,7 +4976,7 @@ update : function()
           color: "0xeeeeee",
 
         },
-<<<<<<< HEAD
+
 
 
           ]
@@ -6084,42 +4984,28 @@ update : function()
     });
   },
   showModal1:function()
-=======
-         
 
-          ]
-        
-    });
-  },
-  showModal1:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
   {
      yay_sound.play('',0,1);
     reg.modal.showModal("modal1");
 },
-<<<<<<< HEAD
+
 showModal2:function()
-=======
-showModal2:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal2");
 },
-<<<<<<< HEAD
+
 showModal3:function()
-=======
-showModal3:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal3");
 },
-<<<<<<< HEAD
+
 showModal4:function()
-=======
-showModal4:function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
   {
 
     reg.modal.showModal("modal4");
@@ -6128,11 +5014,10 @@ next_question_seven:function()
 {
   //reg.modal.hideModal("modal1");
   //fill_elements[0] = 1;
-<<<<<<< HEAD
+
   //making element fly
-=======
-  //making element fly 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
+
   //elements[0] = game.add.sprite(147,349,'game_astri','copper');
   if(fill_elements[7] == 1)
   {
@@ -6162,11 +5047,9 @@ next_stage_seven : function()
 
 }
 var conclusion_screen = function(game){}
-<<<<<<< HEAD
+
 conclusion_screen.prototype =
-=======
-conclusion_screen.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
    init : function()
   {
@@ -6188,7 +5071,7 @@ conclusion_screen.prototype =
 <<<<<<< HEAD
 
 =======
-  
+
 >>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
  },*/
   create : function()
@@ -6206,7 +5089,7 @@ conclusion_screen.prototype =
     var fb_bg = game.add.sprite(-80,70,'game_astri','FEEDBACK POPUP_WITHOUT BLACK BG');
        var k = 0;
     var j = 0;
-<<<<<<< HEAD
+
     //adding element holders
     for(var i = 0;i<8;i++)
     {
@@ -6219,20 +5102,7 @@ conclusion_screen.prototype =
       k = k+1;
       }
       else
-=======
-    //adding element holders 
-    for(var i = 0;i<8;i++)
-    {
-      
-      if(i%2==0)
-      {
-      if(fill_elements[i]==0 || fill_elements[i]==2)
-      {  
-      holders[i] = game.add.sprite(653,133 + (k*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
-      k = k+1;
-      }
-      else 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       {
       holders[i] = game.add.sprite(653,133 + (k*124),'game_astri',element_holder_names[i]);
       k = k +1;
@@ -6241,11 +5111,9 @@ conclusion_screen.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
-<<<<<<< HEAD
+
       {
-=======
-      {  
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
       }
@@ -6284,17 +5152,12 @@ conclusion_screen.prototype =
 
  //calculating the score
 
-<<<<<<< HEAD
+
  //displaying text on screen according to score.
 }
 var VideoScreen = function(game){}
 VideoScreen.prototype =
-=======
- //displaying text on screen according to score. 
-} 
-var VideoScreen = function(game){}
-VideoScreen.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6314,11 +5177,7 @@ VideoScreen.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6326,19 +5185,12 @@ VideoScreen.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6346,15 +5198,11 @@ VideoScreen.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
+
 
        game.state.start('start_screen');
 
-=======
-        
-       game.state.start('start_screen');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6363,11 +5211,9 @@ VideoScreen.prototype =
 
 }
 var VideoScreen1 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen1.prototype =
-=======
-VideoScreen1.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6386,11 +5232,7 @@ VideoScreen1.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6398,19 +5240,13 @@ VideoScreen1.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6418,15 +5254,11 @@ VideoScreen1.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
+
 
        game.state.start('PlayGame');
 
-=======
-        
-       game.state.start('PlayGame');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6435,11 +5267,9 @@ VideoScreen1.prototype =
 
 }
 var VideoScreen2 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen2.prototype =
-=======
-VideoScreen2.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6458,11 +5288,7 @@ VideoScreen2.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6470,19 +5296,13 @@ VideoScreen2.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6490,15 +5310,11 @@ VideoScreen2.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
+
 
        game.state.start('PlayGame1');
 
-=======
-        
-       game.state.start('PlayGame1');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6507,11 +5323,9 @@ VideoScreen2.prototype =
 
 }
 var VideoScreen3 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen3.prototype =
-=======
-VideoScreen3.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6530,11 +5344,7 @@ VideoScreen3.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6542,19 +5352,13 @@ VideoScreen3.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6562,15 +5366,10 @@ VideoScreen3.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
+
 
        game.state.start('PlayGame2');
 
-=======
-        
-       game.state.start('PlayGame2');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       },
       back_function : function()
       {
@@ -6579,11 +5378,9 @@ VideoScreen3.prototype =
 
 }
 var VideoScreen4 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen4.prototype =
-=======
-VideoScreen4.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6602,11 +5399,7 @@ VideoScreen4.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6614,19 +5407,13 @@ VideoScreen4.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6634,15 +5421,11 @@ VideoScreen4.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
+
 
        game.state.start('PlayGame3');
 
-=======
-        
-       game.state.start('PlayGame3');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6651,11 +5434,9 @@ VideoScreen4.prototype =
 
 }
 var VideoScreen5 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen5.prototype =
-=======
-VideoScreen5.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6674,11 +5455,7 @@ VideoScreen5.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6686,19 +5463,13 @@ VideoScreen5.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6706,15 +5477,9 @@ VideoScreen5.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
-
        game.state.start('PlayGame4');
 
-=======
-        
-       game.state.start('PlayGame4');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6723,11 +5488,9 @@ VideoScreen5.prototype =
 
 }
 var VideoScreen6 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen6.prototype =
-=======
-VideoScreen6.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
 {
       preload : function()
       {
@@ -6746,11 +5509,7 @@ VideoScreen6.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6758,19 +5517,12 @@ VideoScreen6.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6778,15 +5530,10 @@ VideoScreen6.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
 
        game.state.start('PlayGame5');
 
-=======
-        
-       game.state.start('PlayGame5');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
+
       },
       back_function : function()
       {
@@ -6795,11 +5542,8 @@ VideoScreen6.prototype =
 
 }
 var VideoScreen7 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen7.prototype =
-=======
-VideoScreen7.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 {
       preload : function()
       {
@@ -6818,11 +5562,7 @@ VideoScreen7.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6830,19 +5570,10 @@ VideoScreen7.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
-
-
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6850,15 +5581,8 @@ VideoScreen7.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
-
        game.state.start('PlayGame6');
 
-=======
-        
-       game.state.start('PlayGame6');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       },
       back_function : function()
       {
@@ -6867,11 +5591,8 @@ VideoScreen7.prototype =
 
 }
 var VideoScreen8 = function(game){}
-<<<<<<< HEAD
+
 VideoScreen8.prototype =
-=======
-VideoScreen8.prototype = 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 {
       preload : function()
       {
@@ -6890,11 +5611,7 @@ VideoScreen8.prototype =
         var back_text = game.add.text(690,10,'BACK',style2);
         back_text.inputEnabled = true;
         console.log(video.loop);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
         video.loop = false;
         video.onComplete.add(this.video_stop,this);
         back_text.events.onInputDown.add(this.back_function,this);
@@ -6902,19 +5619,13 @@ VideoScreen8.prototype =
         console.log(video.onComplete);
 
     //  true = loop
-<<<<<<< HEAD
+
 
 
        game.input.onDown.add(this.pause, this);
       },
       pause : function()
-=======
-       
 
-       game.input.onDown.add(this.pause, this);
-      },
-      pause : function() 
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       {
 
       video.paused = (video.paused) ? false : true;
@@ -6922,15 +5633,9 @@ VideoScreen8.prototype =
       },
       video_stop : function()
       {
-<<<<<<< HEAD
 
        game.state.start('PlayGame7');
 
-=======
-        
-       game.state.start('PlayGame7');
-        
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
       },
       back_function : function()
       {
@@ -6938,11 +5643,7 @@ VideoScreen8.prototype =
       }
 
 }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
 game.state.add('PlayGame', playGame);
 game.state.add('PlayGame1',playGame1);
 game.state.add('PlayGame2',playGame2);
@@ -6965,11 +5666,3 @@ game.state.add('start_screen',start_screen);
 game.state.add('conclusion_screen',conclusion_screen);
 game.state.start('start_screen');
 }
-<<<<<<< HEAD
-=======
-
-
- 
-
-
->>>>>>> 6a87276ff00aae0b41bf4a07e3eb14b8637304fc
