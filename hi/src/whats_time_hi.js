@@ -4508,6 +4508,7 @@ playGame7.prototype =
       else
       {
       if(fill_elements[i]==0 || fill_elements[i]==2)
+      {
 
       holders[i] = game.add.sprite(728,133 + (j*124),'game_astri','ELEMENT_HOLDER_LIGHTOFF');
       j=j+1;
