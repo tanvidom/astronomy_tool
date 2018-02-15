@@ -513,8 +513,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER1',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer01',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -677,8 +677,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER1',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer01',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -1119,8 +1119,8 @@ console.log('out');
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER2',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer02',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -1284,8 +1284,8 @@ console.log('out');
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER2',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer02',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -1683,8 +1683,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER3',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer03',
             //content: "close_button",
             offsetX: -110,
             offsetY: 30,
@@ -1852,8 +1852,8 @@ update : function()
 
            {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER3',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer03',
             //content: "close_button",
             offsetX: -115,
             offsetY: 35,
@@ -2257,8 +2257,8 @@ reset_function_four : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER4',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer04',
             //content: "close_button",
             offsetX: 0,
             offsetY: 0,
@@ -2426,8 +2426,8 @@ reset_function_four : function()
 
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER4',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer04',
             //content: "close_button",
             offsetX: 0,
             offsetY: 0,
@@ -2832,8 +2832,8 @@ earth_np.angle = 0;
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER5',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer05',
             //content: "close_button",
             offsetX: -110,
             offsetY: -10,
@@ -3003,8 +3003,8 @@ earth_np.angle = 0;
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER5',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer05',
             //content: "close_button",
             offsetX: -110,
             offsetY: -5,
@@ -3425,8 +3425,8 @@ update : function()
 
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER6',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer06',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -3592,8 +3592,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER6',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer06',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -3744,6 +3744,7 @@ playGame6.prototype =
     game.load.audio('rotation','assets/sounds/rotation.wav');
     game.load.audio('treasure','assets/sounds/correct.wav');
      game.load.atlasJSONHash('reset','assets/reset.png','assets/reset.json');
+     game.load.atlasJSONHash('answer_screens_te','assets/spritesheet_te1.png','assets/sprites_te1.json');
 
  },
   create : function()
@@ -4004,8 +4005,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER7',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer07',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -4172,8 +4173,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER7',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer07',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -4322,6 +4323,8 @@ playGame7.prototype =
     game.load.audio('treasure','assets/sounds/correct.wav');
     //game.load.image('ANSWER8','assets/ANSWER8.png');
      game.load.atlasJSONHash('reset','assets/reset.png','assets/reset.json');
+     //game.load.atlasJSONHash();
+     game.load.atlasJSONHash('answer_screens_te','assets/spritesheet_te1.png','assets/sprites_te1.json');
 
  },
   create : function()
@@ -4584,8 +4587,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER8',
+             atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer08',
             //content: "close_button",
             offsetX: -110,
             offsetY: 30,
@@ -4753,8 +4756,8 @@ update : function()
         },
          {
             type: "sprite",
-           atlasParent : 'game_astro',
-            content: 'TELGU_ANSWER8',
+           atlasParent : 'answer_screens_te',
+            content: 'Telgu_answer08',
             //content: "close_button",
             offsetX: -115,
             offsetY: 30,

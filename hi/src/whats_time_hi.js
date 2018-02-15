@@ -513,9 +513,9 @@ update : function()
         },
          {
 
-            type : "image",
-            // atlasParent : 'hindi',
-            content: 'answer12',
+            type : "sprite",
+            atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer01',
 
             //content: "close_button",
             offsetX: 40,
@@ -687,9 +687,9 @@ update : function()
 
         },
          {
-            type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER1',
+            type: 'sprite',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer01',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -1149,8 +1149,8 @@ console.log('out');
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER2',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer02',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -1320,8 +1320,8 @@ console.log('out');
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER2',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer02',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -1736,8 +1736,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER3',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer03',
             //content: "close_button",
             offsetX: -110,
             offsetY: 30,
@@ -1909,8 +1909,8 @@ update : function()
 
            {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER3',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer03',
             //content: "close_button",
             offsetX: -115,
             offsetY: 35,
@@ -2341,8 +2341,8 @@ reset_function_four : function()
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER4',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer04',
             //content: "close_button",
             offsetX: 0,
             offsetY: 0,
@@ -2514,8 +2514,8 @@ reset_function_four : function()
 
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER4',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi-answer04',
             //content: "close_button",
             offsetX: 0,
             offsetY: 0,
@@ -2946,8 +2946,8 @@ earth_np.angle = 0;
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER5',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer05',
             //content: "close_button",
             offsetX: -110,
             offsetY: -10,
@@ -3117,8 +3117,8 @@ earth_np.angle = 0;
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER5',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer05',
             //content: "close_button",
             offsetX: -110,
             offsetY: -5,
@@ -3539,8 +3539,8 @@ update : function()
 
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER6',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer06',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -3712,8 +3712,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER6',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer06',
             //content: "close_button",
             offsetX: 40,
             offsetY: 35,
@@ -4131,8 +4131,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER7',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer07',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -4305,8 +4305,8 @@ update : function()
 
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER7',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer07',
             //content: "close_button",
             offsetX: 0,
             offsetY: 60,
@@ -4734,8 +4734,8 @@ update : function()
         },
          {
             type: "sprite",
-            atlasParent : 'hindi',
-            content: 'HINDI_ANSWER8',
+            atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer08',
             //content: "close_button",
             offsetX: -110,
             offsetY: 30,
@@ -4908,8 +4908,8 @@ update : function()
         },
          {
             type: "sprite",
-             atlasParent : 'hindi',
-            content: 'HINDI_ANSWER8',
+             atlasParent : 'answer_screens_hi',
+            content: 'Hindi_answer08',
             //content: "close_button",
             offsetX: -115,
             offsetY: 30,
