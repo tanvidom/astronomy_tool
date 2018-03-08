@@ -1,20 +1,40 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html>
-    <head>  
+    <head>
         <meta charset="utf-8" />
         <title> Astro tool </title>
         <script type="text/javascript" src="src/phaser.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="src/css/mycss.css"> 
+        <link rel="stylesheet" type="text/css" href="src/css/mycss.css">
         <script src="src/build/phaser-input.js"></script>
-        <script type = "text/javascript" src ="src/modal.js"></script> 
+        <script src="src/jquery-1.9.1.js"></script>
+       <script src="src/jquery-ui.js"></script>
+        <script type = "text/javascript" src ="src/modal.js"></script>
          <script type="text/javascript" src="src/Phasetips.js"></script>
          <script type = "text/javascript" src ="src/preloading.js"></script>
-         <script type = "text/javascript" src ="src/fontfaceobserver.js"></script>  
-        <script type = "text/javascript" src ="src/whats_time.js"></script> 
-              
-    </script>
+         <script type = "text/javascript" src ="src/fontfaceobserver.js"></script>
+        <script type = "text/javascript" src ="src/whats_time.js"></script>
+        <script type = "text/javascript" src ="src/Reporting.js"></script>
+        <script>
+        function initSCORM()
+        		{
+        			BrowserDetection.init();
+        			initAPI();
+        		}
+        function init(argStatus, argLessonLocation)
+        		{
+        			if(argStatus != "completed"){
+        				doSetValue("cmi.core.lesson_status", "incomplete");
+        			}
+        		}
+
+
+
+
+        </script>
+
+
     </head>
 
     <body>
-    </body>  
-</html>  
+    </body>
+</html>

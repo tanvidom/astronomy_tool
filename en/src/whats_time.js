@@ -13,6 +13,7 @@
  var tips = [];
  var bounce;
  var count_no_of_attempts = [0,0,0,0,0,0,0,0];
+ var degrees_of_position = [];
  var check = [];
  var rotation = [];
  var holders = [];
@@ -3829,6 +3830,7 @@ update : function()
             this.showModal3();
           }
           }
+          doQuit(count_no_of_attempts);
           },
           rules_button_function : function()
           {
@@ -5345,4 +5347,5 @@ game.state.add('hunter_name_screen',hunter_name_screen);
 game.state.add('start_screen',start_screen);
 game.state.add('conclusion_screen',conclusion_screen);
 game.state.start('start_screen');
+
 }
