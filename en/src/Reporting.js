@@ -7,11 +7,15 @@ var language1 = "en";
 
  function doQuit(count_no_of_attempts)
  {
-JsonArray2 = [
-  {
-  "No of attempts" : count_no_of_attempts
-  },
-];
+JsonArray2 =
+{
+"app_name": "AstRoamerElementHuntActivity",
+"event_type": "session_end",
+"params":
+{
+  "No of attempts" : count_no_of_attempts;
+}
+}
 //pass the method to calculate score.
 console.log('doQuit1');
 console.log(JsonArray2);
@@ -83,7 +87,7 @@ class GameReporter
                   type: "POST",
                   data:{
                         "user_data":data_string,
-                        "app_name":"AstRoamer Element Hunt Activity",
+                        "app_name":"AstRoamer_Element_Hunt_Activity",
                         'csrfmiddlewaretoken':csrftoken,
                     },
                   url: "/tools/logging",
