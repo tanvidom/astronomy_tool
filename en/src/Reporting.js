@@ -9,11 +9,12 @@ var language1 = "en";
  {
 JsonArray2 =
 {
-"app_name": "AstRoamerElementHuntActivity",
+"app_name": "AstRoamer_Element_Hunt_Activity",
 "event_type": "session_end",
 "params":
 {
-  "No of attempts" : count_no_of_attempts
+  "No of attempts" : count_no_of_attempts,
+  "language" : language1
 }
 }
 //pass the method to calculate score.
@@ -83,6 +84,7 @@ class GameReporter
 		data_string['created_at'] = timestamp
 		for (var key in data) {data_string[key] = data[key];};
 		data_string = JSON.stringify(data_string);
+	alert(data_string)
 		$.ajax({
                   type: "POST",
                   data:{
@@ -93,6 +95,7 @@ class GameReporter
                   url: "/tools/logging",
                   datatype: "json",
                   success: function(data) {
+                	alert(data)
                 }
             });
 		// return xhr.response
