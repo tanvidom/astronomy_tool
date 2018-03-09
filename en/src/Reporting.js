@@ -61,7 +61,7 @@ somevariavb = window.open('/modules/policequadv2/index.html');
 }
 function saveDataOnExit(JsonArray)
 {
-gameReporter.submitData('/dev-utilities/tools-test/', JsonArray)
+gameReporter.submitData('/tools/logging', JsonArray)
 console.log('hi');
 }
 
