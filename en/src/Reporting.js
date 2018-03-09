@@ -13,7 +13,7 @@ JsonArray2 =
 "event_type": "session_end",
 "params":
 {
-  "No of attempts" : count_no_of_attempts;
+  "No of attempts" : count_no_of_attempts
 }
 }
 //pass the method to calculate score.
