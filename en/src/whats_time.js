@@ -3830,7 +3830,7 @@ update : function()
             this.showModal3();
           }
           }
-          doQuit(count_no_of_attempts);
+          //doQuit(count_no_of_attempts);
           },
           rules_button_function : function()
           {
