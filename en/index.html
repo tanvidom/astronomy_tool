@@ -27,13 +27,11 @@
         			}
         		}
 
-            $j(window).bind('unload', function(){
-            			//alert('unload event');
-            			doQuit();
-            		});
 
-            		window.onbeforeunload = function(){
-            			$j(window).unbind('unload');
+
+            		window.onbeforeunload = function()
+                {
+            			//$j(window).unbind('unload');
             			doQuit();
             			//return 'Are you sure you want to exit';
             		}

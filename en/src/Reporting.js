@@ -26,6 +26,29 @@ console.log(JsonArray2);
 
 }
 
+/*function clueEnd(cluenumber,){
+var JsonArray =
+{
+"app_name": "AstRoamer_Element_Hunt_Activity",
+"event_type": "clue_end",
+"params":
+{
+"Currentclue": cluenumber,
+"TimeSpentClue": getTimeSpentLvl(), //Mission time spent  total
+"CaseDetails": caseDetails,
+"NumberOfErrors": "", //infer it from case details values
+"NumberOfClues": "",//infer it from case details values
+"scoreAchieved": scoreIN,  //highScore
+"starEarned": stageStar, //starts earned total
+"language" : language1
+}
+
+};  replayCount =0;
+//pass the method to calculate score.
+saveDataStages(JsonArray);
+console.log(JsonArray);
+}*/
+
 // function doQuit(){
 // var JsonArray =
 // {
