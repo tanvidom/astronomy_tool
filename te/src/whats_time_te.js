@@ -414,7 +414,8 @@ update : function()
             count_no_of_attempts[0] = count_no_of_attempts[0] + 1;
             if(count_no_of_attempts[0] < 2)
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -135.00000000000006  && earth_np.angle >= -185.00000000000006)
             {
               console.log('correct');
@@ -428,6 +429,8 @@ update : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
              if(earth_np.angle <= -135.00000000000006  && earth_np.angle >= -185.00000000000006)
             {
               console.log('correct');
@@ -1029,7 +1032,8 @@ console.log('out');
             if(count_no_of_attempts[1] <2)
 
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -104  && earth_np.angle >= -155)
             {
               console.log('correct');
@@ -1046,6 +1050,8 @@ console.log('out');
 
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
            if(earth_np.angle <= -104  && earth_np.angle >= -155)
             {
               console.log('correct');
@@ -1599,7 +1605,8 @@ update : function()
             count_no_of_attempts[2] = count_no_of_attempts[2] + 1;
             if(count_no_of_attempts[2] < 2)
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= 90  && earth_np.angle >= 45)
             {
               console.log('correct');
@@ -1613,6 +1620,8 @@ update : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
               if(earth_np.angle <= 90  && earth_np.angle >= 45)
             {
               console.log('correct');
@@ -2183,7 +2192,8 @@ reset_function_four : function()
             count_no_of_attempts[3] = count_no_of_attempts[3] + 1;
             if(count_no_of_attempts[3] < 2)
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -85  && earth_np.angle >= -130)
             {
               console.log('correct');
@@ -2197,6 +2207,8 @@ reset_function_four : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
              if(earth_np.angle <= -85  && earth_np.angle >= -130)
             {
               console.log('correct');
@@ -2769,6 +2781,8 @@ earth_np.angle = 0;
             count_no_of_attempts[4] = count_no_of_attempts[4] + 1;
             if(count_no_of_attempts[4] < 2)
             {
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -55  && earth_np.angle >= -110)
             {
               console.log('correct');
@@ -2782,6 +2796,8 @@ earth_np.angle = 0;
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
              if(earth_np.angle <= -55  && earth_np.angle >= -110)
             {
               console.log('correct');
@@ -3361,7 +3377,8 @@ update : function()
             count_no_of_attempts[5] = count_no_of_attempts[5] + 1;
             if(count_no_of_attempts[5] < 2)
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -25  && earth_np.angle >= -70)
             {
               console.log('correct');
@@ -3375,6 +3392,8 @@ update : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
             if(earth_np.angle <= -25  && earth_np.angle >= -70)
             {
               console.log('correct');
@@ -3950,7 +3969,8 @@ update : function()
             count_no_of_attempts[6] = count_no_of_attempts[6] + 1;
             if(count_no_of_attempts[6] < 2)
             {
-
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= -105  && earth_np.angle >= -145)
             {
               console.log('correct');
@@ -3964,6 +3984,8 @@ update : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
             if(earth_np.angle <= -105  && earth_np.angle >= -145)
             {
               console.log('correct');
@@ -4547,6 +4569,8 @@ update : function()
             count_no_of_attempts[7] = count_no_of_attempts[7] + 1;
             if(count_no_of_attempts[7] < 2)
             {
+              degrees_of_position[z] = earth_np.angle;
+              z++;
             if(earth_np.angle <= 85  && earth_np.angle >= 40)
             {
               console.log('correct');
@@ -4560,6 +4584,8 @@ update : function()
           }
           else
           {
+            degrees_of_position[z] = earth_np.angle;
+            z++;
              if(earth_np.angle <= 85  && earth_np.angle >= 40)
             {
               console.log('correct');
