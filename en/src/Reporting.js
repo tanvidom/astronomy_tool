@@ -1,11 +1,26 @@
 
 var language1 = "en";
+var cluenumber = 0;
+var numberofattempts = [0,0,0,0,0,0,0,0];
+var degrees_of_position1 = 0;
+var degrees_of_position2 = 0;
+function sessionstart()
+{
+  var JsonArray =
+  {
+  "app_name": "AstRoamer_Element_Hunt_Activity",
+  "event_type": "game_start",
+  "params":
+  {
+   "language" : language1
+  }
 
-
-
-
-
- function doQuit(count_no_of_attempts)
+  };
+  //pass the method to calculate score.
+  saveDataStages(JsonArray);
+  console.log(JsonArray);
+}
+function doQuit(score)
  {
 JsonArray2 =
 {
@@ -13,7 +28,8 @@ JsonArray2 =
 "event_type": "session_end",
 "params":
 {
-  "No of attempts" : count_no_of_attempts,
+  "Final score" : score,
+
   "language" : language1
 }
 }
@@ -26,7 +42,7 @@ console.log(JsonArray2);
 
 }
 
-/*function clueEnd(cluenumber,){
+function clueEnd(cluenumber,numberofattempts,degrees_of_position1,degrees_of_position2){
 var JsonArray =
 {
 "app_name": "AstRoamer_Element_Hunt_Activity",
@@ -34,20 +50,17 @@ var JsonArray =
 "params":
 {
 "Currentclue": cluenumber,
-"TimeSpentClue": getTimeSpentLvl(), //Mission time spent  total
-"CaseDetails": caseDetails,
-"NumberOfErrors": "", //infer it from case details values
-"NumberOfClues": "",//infer it from case details values
-"scoreAchieved": scoreIN,  //highScore
-"starEarned": stageStar, //starts earned total
+"NumberofAttempts" : numberofattempts,
+"FirstAttemptAnswer" : degrees_of_position1,
+"SecondAttemptAnswer" : degrees_of_position2,
 "language" : language1
 }
 
-};  replayCount =0;
+};
 //pass the method to calculate score.
 saveDataStages(JsonArray);
 console.log(JsonArray);
-}*/
+}
 
 // function doQuit(){
 // var JsonArray =
