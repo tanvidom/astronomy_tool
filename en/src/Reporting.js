@@ -17,7 +17,7 @@ function sessionstart()
 
   };
   //pass the method to calculate score.
-  saveDataStages(JsonArray);
+  saveDataOnExit(JsonArray);
   console.log(JsonArray);
 }
 function doQuit(score)
@@ -58,7 +58,7 @@ var JsonArray =
 
 };
 //pass the method to calculate score.
-saveDataStages(JsonArray);
+saveDataOnExit(JsonArray);
 console.log(JsonArray);
 }
 
