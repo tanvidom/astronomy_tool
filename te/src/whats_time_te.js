@@ -13,6 +13,8 @@
  var tips = [];
  var bounce;
  var count_no_of_attempts = [0,0,0,0,0,0,0,0];
+ var degrees_of_position = [];
+ var z = 0;
  var check = [];
  var rotation = [];
  var holders = [];
@@ -69,6 +71,7 @@
  },
   create : function()
   {
+      sessionstart();
      reg.modal = new gameModal(game);
        this.createModals();
   background[0] = game.add.sprite(0,0,'demo','INTROSCREEN_BG');
@@ -820,6 +823,14 @@ next_question_one:function()
 next_stage_two : function()
 {
   //console.log('hi');
+  if(count_no_of_attempts[0] == 1)
+  {
+   clueEnd(clue_number1[0],count_no_of_attempts[0],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[0],count_no_of_attempts[0],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame1');
 }
 
@@ -1409,6 +1420,14 @@ next_question_two:function()
 },
 next_stage_two : function()
 {
+  if(count_no_of_attempts[1] == 1)
+  {
+   clueEnd(clue_number1[1],count_no_of_attempts[1],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[1],count_no_of_attempts[1],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame2');
 }
 
@@ -1975,6 +1994,14 @@ next_question_three:function()
 },
 next_stage_three : function()
 {
+  if(count_no_of_attempts[2] == 1)
+  {
+   clueEnd(clue_number1[2],count_no_of_attempts[2],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[2],count_no_of_attempts[2],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame3');
 }
 
@@ -2550,6 +2577,14 @@ next_question_three:function()
 },
 next_stage_four : function()
 {
+  if(count_no_of_attempts[3] == 1)
+  {
+   clueEnd(clue_number1[3],count_no_of_attempts[3],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[3],count_no_of_attempts[3],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   console.log('stop');
   game.state.start('PlayGame4');
 }
@@ -3135,6 +3170,14 @@ next_question_four:function()
 },
 next_stage_five : function()
 {
+  if(count_no_of_attempts[4] == 1)
+  {
+   clueEnd(clue_number1[4],count_no_of_attempts[4],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[4],count_no_of_attempts[4],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame5');
 }
 }
@@ -3718,6 +3761,14 @@ next_question_five:function()
 },
 next_stage_six : function()
 {
+  if(count_no_of_attempts[5] == 1)
+  {
+   clueEnd(clue_number1[5],count_no_of_attempts[5],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[5],count_no_of_attempts[5],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame6');
 }
 
@@ -4297,6 +4348,14 @@ next_question_six:function()
 },
 next_stage_seven : function()
 {
+  if(count_no_of_attempts[6] == 1)
+  {
+   clueEnd(clue_number1[6],count_no_of_attempts[6],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[6],count_no_of_attempts[6],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('PlayGame7');
 }
 }
@@ -4886,6 +4945,14 @@ next_question_seven:function()
 },
 next_stage_seven : function()
 {
+  if(count_no_of_attempts[7] == 1)
+  {
+   clueEnd(clue_number1[7],count_no_of_attempts[7],degrees_of_position[z-1]);
+  }
+   else
+   {
+     clueEnd(clue_number1[7],count_no_of_attempts[7],degrees_of_position[z-2],degrees_of_position[z-1]);
+   }
   game.state.start('conclusion_screen');
 }
 
@@ -4999,6 +5066,7 @@ conclusion_screen.prototype =
   screen_text[15] = game.add.text(130,440,'ఈ ట్యాబ్ మూసేయండి మరియు కొనసాగటానికి 1వ ట్యాబ్ కి తిరిగి రండి.',style2);
   screen_text[15].wordWrap = true;
   screen_text[15].wordWrapWidth = 380;
+  doQuit(score);
   },
 
  //calculating the score

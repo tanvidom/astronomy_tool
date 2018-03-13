@@ -1,6 +1,25 @@
 
 var language1 = "te";
+var cluenumber = 0;
+var numberofattempts = [0,0,0,0,0,0,0,0];
+var degrees_of_position1 = 0;
+var degrees_of_position2 = 0;
+function sessionstart()
+{
+  var JsonArray =
+  {
+  "app_name": "AstRoamer_Element_Hunt_Activity",
+  "event_type": "game_start",
+  "params":
+  {
+   "language" : language1
+  }
 
+  };
+  //pass the method to calculate score.
+  saveDataOnExit(JsonArray);
+  console.log(JsonArray);
+}
 
 
 
@@ -25,7 +44,25 @@ saveDataOnExit(JsonArray2);
 console.log(JsonArray2);
 
 }
+function clueEnd(cluenumber,numberofattempts,degrees_of_position1,degrees_of_position2){
+var JsonArray =
+{
+"app_name": "AstRoamer_Element_Hunt_Activity",
+"event_type": "clue_end",
+"params":
+{
+"Currentclue": cluenumber,
+"NumberofAttempts" : numberofattempts,
+"FirstAttemptAnswer" : degrees_of_position1,
+"SecondAttemptAnswer" : degrees_of_position2,
+"language" : language1
+}
 
+};
+//pass the method to calculate score.
+saveDataOnExit(JsonArray);
+console.log(JsonArray);
+}
 // function doQuit(){
 // var JsonArray =
 // {

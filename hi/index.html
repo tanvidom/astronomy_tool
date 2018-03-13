@@ -14,8 +14,31 @@
          <script type = "text/javascript" src ="src/fontfaceobserver.js"></script>
         <script type = "text/javascript" src ="src/whats_time_hi.js"></script>
           <script type = "text/javascript" src ="src/Reporting.js"></script>
+          <script>
+          function initSCORM()
+          		{
+          			BrowserDetection.init();
+          			initAPI();
+          		}
+          function init(argStatus, argLessonLocation)
+          		{
+          			if(argStatus != "completed"){
+          				doSetValue("cmi.core.lesson_status", "incomplete");
+          			}
+          		}
 
-    </script>
+
+
+              		window.onbeforeunload = function()
+                  {
+              			//$j(window).unbind('unload');
+              			doQuit(score);
+              			//return 'Are you sure you want to exit';
+              		}
+
+
+          </script>
+
     </head>
 
     <body>
