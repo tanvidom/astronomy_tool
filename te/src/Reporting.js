@@ -121,7 +121,7 @@ class GameReporter
 		data_string['created_at'] = timestamp
 		for (var key in data) {data_string[key] = data[key];};
 		data_string = JSON.stringify(data_string);
-	alert(data_string)
+	//alert(data_string)
 		$.ajax({
                   type: "POST",
                   data:{
