@@ -116,6 +116,8 @@ class GameReporter
 		var date = new Date();
 		var csrftoken;
 		csrftoken = this.getCookie('csrftoken');
+    var buddy_details;
+    buddy_details = this.getCookie('user_and_buddy_ids');
     	var timestamp = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 		data_string['created_at'] = timestamp
 		for (var key in data) {data_string[key] = data[key];};
@@ -126,7 +128,9 @@ class GameReporter
                   data:{
                         "user_data":data_string,
                         "app_name":"AstRoamer_Element_Hunt_Activity",
+                        "buddy_details": buddy_details,
                         'csrfmiddlewaretoken':csrftoken,
+
                     },
                   url: "/tools/logging",
                   datatype: "json",
