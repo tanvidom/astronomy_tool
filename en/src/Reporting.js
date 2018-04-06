@@ -9,9 +9,10 @@ function sessionstart()
   var JsonArray =
   {
   "app_name": "AstRoamer_Element_Hunt_Activity",
-  "event_type": "game_start",
+
   "params":
   {
+    "event_type": "game_start",
    "language" : language1
   }
 
@@ -25,9 +26,10 @@ function doQuit(score)
 JsonArray2 =
 {
 "app_name": "AstRoamer_Element_Hunt_Activity",
-"event_type": "session_end",
+
 "params":
 {
+  "event_type": "session_end",
   "Final score" : score,
 
   "language" : language1
@@ -46,9 +48,10 @@ function clueEnd(cluenumber,numberofattempts,degrees_of_position1,degrees_of_pos
 var JsonArray =
 {
 "app_name": "AstRoamer_Element_Hunt_Activity",
-"event_type": "clue_end",
+
 "params":
 {
+  "event_type": "clue_end",
 "Currentclue": cluenumber,
 "NumberofAttempts" : numberofattempts,
 "FirstAttemptAnswer" : degrees_of_position1,
@@ -122,8 +125,11 @@ class GameReporter
     sessionid = this.getCookie('sessionid');
     	var timestamp = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 		data_string['createdAt'] = timestamp
-    data_string['buddy_details'] = buddy_details
+    data_string['buddyIDs'] = buddy_details
     data_string['sessionid'] = sessionid
+    data_string['appName'] = "AstRoamer_Element_Hunt_Activity"
+    data_string['language'] = language1
+    data_string['appData']
 		for (var key in data) {data_string[key] = data[key];};
 		data_string = JSON.stringify(data_string);
 	//alert(data_string)
