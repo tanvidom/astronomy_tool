@@ -118,7 +118,7 @@ class GameReporter
 		var csrftoken;
 		csrftoken = this.getCookie('csrftoken');
     var buddy_details;
-    buddy_details = this.getCookie('user_and_buddy_ids');
+    buddy_details = this.getCookie('buddy_ids');
     var sessionid;
     sessionid = this.getCookie('sessionid');
     	var timestamp = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
