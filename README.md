@@ -7,11 +7,11 @@ The objective of this game is that it will help them understand the concept of r
 
 This game is designed by the CLIx Astronomy Team after which the design was converted into the digital tool by the CLIx technology team. This game has 8 clues that the player has to solve in order to collect different elements. It is available in 3 languages - English, Hindi and Telegu. 
 
-## Contributors.
+## Contributors
     
-### Conceptualising and Designing.
+### Conceptualising and Designing
 
-#### CLIx Curriculum Team.
+#### CLIx Curriculum Team
 
 1. Shamin Padalkar
 2. Sheetal Chopde 
